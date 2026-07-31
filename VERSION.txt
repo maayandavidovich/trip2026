@@ -1,1 +1,3 @@
-V6.3 - itinerary and confirmed flights updated 2026-07-31
+TravelOS South America Spring 2026 — V6.4 Route Verified
+Updated: 2026-07-31
+Includes booked USH→Buenos Aires flight and recommended overland Carretera→El Calafate route.
