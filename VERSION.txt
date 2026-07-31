@@ -1,2 +1,6 @@
-TravelOS V6
-Built 2026-07-30
+TravelOS V6.2 Improved
+- Original palette preserved
+- International Emirates flights
+- Internal flight target prices with 10kg baggage
+- Stay and food recommendations
+- New branding
