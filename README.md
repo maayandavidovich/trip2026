@@ -1,42 +1,35 @@
-# TravelOS V6 — Maayan South America 2026
+# TravelOS V7 — Maayan South America 2026
 
-פרויקט מוכן ל-GitHub Pages.
+GitHub Pages-ready modular build.
 
-## העלאה
-1. חלצי את ה-ZIP.
-2. העלי את כל **תוכן התיקייה** לשורש ה-repository.
-3. GitHub → Settings → Pages → Deploy from branch → main / root.
-4. המתיני 1–3 דקות ורענני.
+## Structure
+- `index.html` — app shell / HTML only
+- `css/` — visual styles and mobile/map styles
+- `js/` — app logic and map layers
+- `data/trip-data.js` — itinerary, bookings, POIs, flights and trip data
+- `assets/` — local icon and image fallbacks
+- `manifest.webmanifest` + `sw.js` — installable PWA/offline shell
 
-## מה כלול
-- Dashboard, מסלול מלא, מפה, טיסות, הזמנות, תקציב, Packing, יומן ו-Copilot מקומי.
-- 30 המחשות מקומיות ליעדים — אין תלות בקישורי תמונות שעלולים להישבר.
-- PWA ומטמון אופליין לתוכן המקומי.
-- שמירת סימונים ותקציב ב-localStorage.
+## Upload to GitHub
+Upload **the contents of this folder**, not the folder itself, to the repository root. Existing `assets/images` may be kept; this package also includes local fallbacks so no references are broken.
 
-הערה: המפה עצמה משתמשת ב-Leaflet/OpenStreetMap ודורשת אינטרנט לטעינת אריחים חדשים.
+## GitHub Pages
+Repository Settings → Pages → Deploy from branch → `main` / root.
 
+## Important
+The interactive map uses online OpenStreetMap tiles when network access is available. Core itinerary/PWA files are cached locally after the first normal web load.
 
-## V6.4
-- נוספה טיסת Ushuaia → Buenos Aires ב־30/11 בשעה 09:57 כטיסה שהוזמנה.
-- המעבר מהקרטרה לאל קלפטה עודכן דרך Chile Chico ו־Los Antiguos.
-- תאריכי El Calafate ו־El Chaltén עודכנו.
-- יש לאמת לוחות אוטובוסים לפני הזמנה, משום שהשירות אינו יומי.
+## V7.2 GitHub-compatible structure
 
-## V6.5 — Cars & Stays
-- נוספו The Host Puerto Iguazú ו-Hostel Inn Bariloche כהזמנות סגורות.
-- נוסף מרכז לינות עם עדיפויות להמשך.
-- נוסף מרכז השכרת רכב לסלטה, ברילוצ׳ה והקרטרה אוסטרל.
-- נוספו קישורים רשמיים לחברות השכרה וסניפי שדה.
-- נוסף Road Book לקרטרה ורשימת תנאים לקבלת אישור בכתב.
+This build intentionally keeps the same repository layout as the existing GitHub Pages project:
 
+- `index.html`
+- `assets/`
+- `manifest.webmanifest`
+- `sw.js`
+- `VERSION.txt`
+- `README.md`
 
-## V6.6 — Booked stays on map
-- נוספו Pins מדויקים במפה עבור The Host Puerto Iguazú ו-Hostel Inn Bariloche.
-- נוספו כתובות, מתקנים עיקריים וקישורי Booking לכרטיסי הלינה.
-- נוסף פילטר לינות במפה.
+All app CSS, JavaScript, map layers and trip data are inlined into `index.html`, so there are no `css/`, `js/` or `data/` folders to upload.
 
-## V6.7 — Navigation + Bariloche booking
-- תפריט תחתון ברור יותר באייפון, עם אייקונים וכיתוב.
-- חמש לשוניות ראשיות + כפתור "עוד" לכל שאר המסכים.
-- Hostel Inn Bariloche מסומן כ-Booked גם במסלול, בהזמנות ובלינה.
+To upgrade the existing repository, replace the matching top-level files and replace the `assets/` folder contents.
