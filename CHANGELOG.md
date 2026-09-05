@@ -1,3 +1,9 @@
+# V8.3
+- Hebrew editorial UI refinement.
+- Booking dates now show explicit missing/completed counts and clear action labels.
+- Added visible app update prompt and versioned service-worker cache.
+- App shell uses network-first fetching so GitHub Pages updates are picked up instead of being trapped in an old cache.
+
 # V8.0 — Visual Refresh
 - Warm Patagonia editorial palette
 - Full Hebrew-first interface with English place names only

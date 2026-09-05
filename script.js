@@ -68,10 +68,10 @@
     var done=boxes.filter(function(b){return b.checked}).length;
     var pct=boxes.length?Math.round(done/boxes.length*100):0;
     var p=document.getElementById('booking-percent'), f=document.getElementById('booking-progress'), s=document.getElementById('booking-summary');
-    if(p)p.textContent=pct+'%'; if(f)f.style.width=pct+'%'; if(s)s.textContent=done+' of '+boxes.length+' completed';
+    if(p)p.textContent=pct+'%'; if(f)f.style.width=pct+'%'; if(s)s.textContent='הושלמו '+done+' מתוך '+boxes.length;
     var firstUrgent=boxes.find(function(b){return !b.checked && b.closest('.check-item').classList.contains('urgent')});
     var t=document.getElementById('next-action-title'),n=document.getElementById('next-action-note');
-    if(firstUrgent){var item=firstUrgent.closest('.check-item');var name=item.querySelector('.check-name');if(t&&name)t.textContent=name.childNodes[0].textContent.trim();if(n)n.textContent='An urgent item is still incomplete. Open the bookings section for details.';}else{if(t)t.textContent='All urgent items are complete';if(n)n.textContent='The next step is to review the high-priority bookings.';}
+    if(firstUrgent){var item=firstUrgent.closest('.check-item');var name=item.querySelector('.check-name');if(t&&name)t.textContent=name.childNodes[0].textContent.trim();if(n)n.textContent='פתחי את ההזמנות כדי לראות בדיוק מה חסר.';}else{if(t)t.textContent='כל ההזמנות הדחופות הושלמו';if(n)n.textContent='השלב הבא הוא לעבור על ההזמנות בעדיפות גבוהה.';}
   }
   update();
 })();
