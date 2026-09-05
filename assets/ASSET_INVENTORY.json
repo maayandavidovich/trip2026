@@ -1,5 +1,5 @@
 {
-  "version": "7.1 FULL",
+  "version": "7.4 PHOTO GALLERY",
   "legacy_assets_preserved_by_filename": true,
   "image_assets": [
     "bariloche-1.svg",
@@ -33,5 +33,28 @@
     "ushuaia-2.svg",
     "ushuaia-3.svg"
   ],
-  "notes": "All 3 legacy SVG image slots per destination are included so existing references remain valid."
+  "notes": "All 3 legacy SVG image slots per destination are included so existing references remain valid.",
+  "photo_gallery": "PHOTO_GALLERY.json",
+  "additional_offline_image_assets": [
+    "bariloche-4.svg",
+    "bariloche-5.svg",
+    "buenos-aires-4.svg",
+    "buenos-aires-5.svg",
+    "carretera-austral-4.svg",
+    "carretera-austral-5.svg",
+    "el-calafate-4.svg",
+    "el-calafate-5.svg",
+    "el-chalten-4.svg",
+    "el-chalten-5.svg",
+    "iguazu-4.svg",
+    "iguazu-5.svg",
+    "salta-jujuy-4.svg",
+    "salta-jujuy-5.svg",
+    "torres-4.svg",
+    "torres-5.svg",
+    "ushuaia-4.svg",
+    "ushuaia-5.svg",
+    "puerto-natales-4.svg",
+    "puerto-natales-5.svg"
+  ]
 }

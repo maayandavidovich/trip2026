@@ -1,35 +1,28 @@
-# TravelOS V7 — Maayan South America 2026
+# TravelOS V7.3
 
-GitHub Pages-ready modular build.
+South America trip planner for Maayan.
+
+## Included
+- Latest itinerary and destination guides
+- Maayan's personalized guide and booking checklist
+- Working Leaflet/OpenStreetMap interactive route map
+- Static map fallback
+- Restored `assets/` folder in the original project format, including all destination SVG images and app icon
+- PWA manifest and service worker
 
 ## Structure
-- `index.html` — app shell / HTML only
-- `css/` — visual styles and mobile/map styles
-- `js/` — app logic and map layers
-- `data/trip-data.js` — itinerary, bookings, POIs, flights and trip data
-- `assets/` — local icon and image fallbacks
-- `manifest.webmanifest` + `sw.js` — installable PWA/offline shell
-
-## Upload to GitHub
-Upload **the contents of this folder**, not the folder itself, to the repository root. Existing `assets/images` may be kept; this package also includes local fallbacks so no references are broken.
-
-## GitHub Pages
-Repository Settings → Pages → Deploy from branch → `main` / root.
-
-## Important
-The interactive map uses online OpenStreetMap tiles when network access is available. Core itinerary/PWA files are cached locally after the first normal web load.
-
-## V7.2 GitHub-compatible structure
-
-This build intentionally keeps the same repository layout as the existing GitHub Pages project:
-
 - `index.html`
-- `assets/`
+- `script.js`
+- `places-guide.js`
+- `my-guide.js`
+- `my-map.js`
+- `trip.json`
+- `style.css`
+- `assets/images/`
+- `assets/icons/`
 - `manifest.webmanifest`
 - `sw.js`
-- `VERSION.txt`
-- `README.md`
 
-All app CSS, JavaScript, map layers and trip data are inlined into `index.html`, so there are no `css/`, `js/` or `data/` folders to upload.
 
-To upgrade the existing repository, replace the matching top-level files and replace the `assets/` folder contents.
+### Local-only galleries
+All destination gallery images are bundled under `assets/images/`. No remote photo URLs are used by the gallery.
