@@ -1,17 +1,17 @@
-# TravelOS V8.6 — דרום אמריקה 2026
+# TravelOS V9.0 — דרום אמריקה 2026
 
-אתר טיול אישי בעברית, עם שמות מקומות באנגלית, מסלול Argentina + Chile, בסיס Puerto Natales לפני Torres, מפה מקומית, מדריכי יעדים וכיתת לימוד.
+לוח טיול אישי בעברית למסלול Argentina + Chile, אוקטובר–דצמבר 2026.
 
-## מה חדש
-- ממשק RTL בעברית.
-- צבעים בהירים ונקיים.
-- גלריות PNG מקומיות לתצוגה אמינה.
-- המפה עובדת מקומית ללא שרת מפות חיצוני.
-- Puerto Natales מוצגת כבסיס אמיתי לפני Torres עם לינה מוזמנת.
-- אין תלות בתמונות מהאינטרנט.
+## V9.0 — מה עודכן
+- עיצוב ראשי בהשראת דשבורד Patagonia נקי ובהיר.
+- Hero עם תמונת נוף מקומית.
+- כרטיסי יעד עם תמונות מקומיות אמיתיות/פוטוריאליסטיות לכל יעד מרכזי.
+- הזמנות מוצגות לפי סטטוס ברור: סגור / פתוח.
+- Puerto Natales: לינה סגורה ל־19–21/11/2026.
+- Iguazú: The Host Puerto Iguazú סגור ל־20–22/10/2026.
+- Bariloche: Hostel Inn Bariloche סגור ל־28/10–01/11/2026.
+- Torres del Paine: W Trek סגור ל־21–25/11/2026.
+- Ushuaia: לינה סגורה ל־26–30/11/2026.
+- README, VERSION, title ו־service worker עודכנו ל־V9.0.
 
-פתחי `index.html` או פרסמי את התיקייה ב-GitHub Pages.
-
-
-### V8.6
-Clickable booking calendar by date. Select a date (for example 1.11) to see exactly what is still missing.
+פתחי `index.html` או פרסמי את התיקייה ב־GitHub Pages.
