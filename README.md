@@ -1,28 +1,24 @@
-# TravelOS V7.3
+# TravelOS V7.6 — South America 2026
 
-South America trip planner for Maayan.
+Personal travel app for Maayan's Argentina + Chile trip.
 
-## Included
-- Latest itinerary and destination guides
-- Maayan's personalized guide and booking checklist
-- Working Leaflet/OpenStreetMap interactive route map
-- Static map fallback
-- Restored `assets/` folder in the original project format, including all destination SVG images and app icon
-- PWA manifest and service worker
+## What's new in V7.6
+- 🎓 **Travel Classroom:** learn about every destination before arriving.
+- 📚 Quick facts + history + geography + culture + preparation notes.
+- ❓ A self-check question for each place.
+- 🔎 Search the learning section by place/topic/question.
+- 🗺️ Local/offline route map.
+- 🖼️ Local photo galleries in `assets/images/`.
+- 📋 Booking/action guidance.
 
-## Structure
-- `index.html`
-- `script.js`
-- `places-guide.js`
-- `my-guide.js`
-- `my-map.js`
-- `trip.json`
-- `style.css`
-- `assets/images/`
-- `assets/icons/`
-- `manifest.webmanifest`
-- `sw.js`
+## Offline
+The destination photos and learning content are bundled locally. The route map is also local and does not require external map tiles. Links such as Google Maps only open externally when you choose them.
 
-
-### Local-only galleries
-All destination gallery images are bundled under `assets/images/`. No remote photo URLs are used by the gallery.
+## Files
+- `index.html` — app UI
+- `script.js` — core interactions
+- `places-guide.js` — destination guide + Travel Classroom
+- `my-guide.js` — personalized recommendations
+- `my-map.js` — local interactive map
+- `trip.json` — itinerary data
+- `assets/` — local images and asset metadata
