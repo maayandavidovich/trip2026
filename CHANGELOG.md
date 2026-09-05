@@ -1,3 +1,9 @@
+# V9.6 — Visual theme + cache fix
+
+- Full light Patagonia visual theme across all sections.
+- Wide destination photography.
+- Cache-busting service worker.
+
 ## V9.5
 - One wide photo per destination guide skin instead of repeated day thumbnails.
 - Consistent bright visual treatment across guide sections.

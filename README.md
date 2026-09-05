@@ -1,12 +1,12 @@
-## TravelOS V9.5
+## TravelOS V9.6
 
 Visual redesign: one wide destination hero image per guide skin, bright blue/teal/white visual language across all guide sections, and cleaner day cards.
 
-# TravelOS V9.5 — דרום אמריקה 2026
+# TravelOS V9.6 — דרום אמריקה 2026
 
 לוח טיול אישי בעברית למסלול Argentina + Chile, אוקטובר–דצמבר 2026.
 
-## V9.5 — מה עודכן
+## V9.6 — מה עודכן
 - עיצוב ראשי בהשראת דשבורד Patagonia נקי ובהיר.
 - Hero עם תמונת נוף מקומית.
 - כרטיסי יעד עם תמונות מקומיות אמיתיות/פוטוריאליסטיות לכל יעד מרכזי.
@@ -16,22 +16,22 @@ Visual redesign: one wide destination hero image per guide skin, bright blue/tea
 - Bariloche: Hostel Inn Bariloche סגור ל־28/10–01/11/2026.
 - Torres del Paine: W Trek סגור ל־21–25/11/2026.
 - Ushuaia: לינה סגורה ל־26–30/11/2026.
-- README, VERSION, title ו־service worker עודכנו ל־V9.5.
+- README, VERSION, title ו־service worker עודכנו ל־V9.6.
 
 פתחי `index.html` או פרסמי את התיקייה ב־GitHub Pages.
 
 
-## V9.5
+## V9.6
 Unified visual redesign inspired by the TravelOS reference: Patagonia hero, blue/teal/white palette, softer backgrounds, consistent cards, maps, bookings, learning and guide sections, plus cache-busting for GitHub Pages.
 
 
-## V9.5 Visual redesign
+## V9.6 Visual redesign
 - Unified the new Patagonia visual language across dashboard, route, bookings, import, learning, guide, coordinates and footer.
 - Fixed the “הפעולה הבאה” card so it is populated from the first real open urgent booking task.
 - Added stronger visual hierarchy, light backgrounds, rounded cards, teal accents and scenic footer.
 
 
-### V9.5 Photo Guide Update
+### V9.6 Photo Guide Update
 - Added destination photography to every city/day card in “המדריך שלי”.
 - Added Puerto Natales as a dedicated visual guide section.
 - Reused the local offline photo library so the guide remains offline-first.
