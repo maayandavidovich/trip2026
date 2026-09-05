@@ -1,4 +1,4 @@
-const CACHE='travelos-v7-2-github-compat';
+const CACHE='travelos-v7-9';
 const CORE=["./", "./index.html",       "./manifest.webmanifest", "./assets/icons/icon.svg"];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));

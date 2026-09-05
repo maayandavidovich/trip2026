@@ -159,17 +159,17 @@
   ];
 
   const localGallery = {
-    'ba-start':["assets/images/buenos-aires-1.svg", "assets/images/buenos-aires-2.svg", "assets/images/buenos-aires-3.svg", "assets/images/buenos-aires-4.svg", "assets/images/buenos-aires-5.svg"],
-    'ba-final':["assets/images/buenos-aires-1.svg", "assets/images/buenos-aires-2.svg", "assets/images/buenos-aires-3.svg", "assets/images/buenos-aires-4.svg", "assets/images/buenos-aires-5.svg"],
-    'iguazu':["assets/images/iguazu-1.svg", "assets/images/iguazu-2.svg", "assets/images/iguazu-3.svg", "assets/images/iguazu-4.svg", "assets/images/iguazu-5.svg"],
-    'salta-jujuy':["assets/images/salta-jujuy-1.svg", "assets/images/salta-jujuy-2.svg", "assets/images/salta-jujuy-3.svg", "assets/images/salta-jujuy-4.svg", "assets/images/salta-jujuy-5.svg"],
-    'bariloche':["assets/images/bariloche-1.svg", "assets/images/bariloche-2.svg", "assets/images/bariloche-3.svg", "assets/images/bariloche-4.svg", "assets/images/bariloche-5.svg"],
-    'carretera':["assets/images/carretera-austral-1.svg", "assets/images/carretera-austral-2.svg", "assets/images/carretera-austral-3.svg", "assets/images/carretera-austral-4.svg", "assets/images/carretera-austral-5.svg"],
-    'chalten':["assets/images/el-chalten-1.svg", "assets/images/el-chalten-2.svg", "assets/images/el-chalten-3.svg", "assets/images/el-chalten-4.svg", "assets/images/el-chalten-5.svg"],
-    'calafate':["assets/images/el-calafate-1.svg", "assets/images/el-calafate-2.svg", "assets/images/el-calafate-3.svg", "assets/images/el-calafate-4.svg", "assets/images/el-calafate-5.svg"],
-    'torres':["assets/images/torres-1.svg", "assets/images/torres-2.svg", "assets/images/torres-3.svg", "assets/images/torres-4.svg", "assets/images/torres-5.svg"],
-    'ushuaia':["assets/images/ushuaia-1.svg", "assets/images/ushuaia-2.svg", "assets/images/ushuaia-3.svg", "assets/images/ushuaia-4.svg", "assets/images/ushuaia-5.svg"],
-    'puerto-natales':["assets/images/puerto-natales-1.svg", "assets/images/puerto-natales-2.svg", "assets/images/puerto-natales-3.svg", "assets/images/puerto-natales-4.svg", "assets/images/puerto-natales-5.svg"],
+    'ba-start':["assets/images-png/buenos-aires-1.png", "assets/images-png/buenos-aires-2.png", "assets/images-png/buenos-aires-3.png", "assets/images-png/buenos-aires-4.png", "assets/images-png/buenos-aires-5.png"],
+    'ba-final':["assets/images-png/buenos-aires-1.png", "assets/images-png/buenos-aires-2.png", "assets/images-png/buenos-aires-3.png", "assets/images-png/buenos-aires-4.png", "assets/images-png/buenos-aires-5.png"],
+    'iguazu':["assets/images-png/iguazu-1.png", "assets/images-png/iguazu-2.png", "assets/images-png/iguazu-3.png", "assets/images-png/iguazu-4.png", "assets/images-png/iguazu-5.png"],
+    'salta-jujuy':["assets/images-png/salta-jujuy-1.png", "assets/images-png/salta-jujuy-2.png", "assets/images-png/salta-jujuy-3.png", "assets/images-png/salta-jujuy-4.png", "assets/images-png/salta-jujuy-5.png"],
+    'bariloche':["assets/images-png/bariloche-1.png", "assets/images-png/bariloche-2.png", "assets/images-png/bariloche-3.png", "assets/images-png/bariloche-4.png", "assets/images-png/bariloche-5.png"],
+    'carretera':["assets/images-png/carretera-austral-1.png", "assets/images-png/carretera-austral-2.png", "assets/images-png/carretera-austral-3.png", "assets/images-png/carretera-austral-4.png", "assets/images-png/carretera-austral-5.png"],
+    'chalten':["assets/images-png/el-chalten-1.png", "assets/images-png/el-chalten-2.png", "assets/images-png/el-chalten-3.png", "assets/images-png/el-chalten-4.png", "assets/images-png/el-chalten-5.png"],
+    'calafate':["assets/images-png/el-calafate-1.png", "assets/images-png/el-calafate-2.png", "assets/images-png/el-calafate-3.png", "assets/images-png/el-calafate-4.png", "assets/images-png/el-calafate-5.png"],
+    'torres':["assets/images-png/torres-1.png", "assets/images-png/torres-2.png", "assets/images-png/torres-3.png", "assets/images-png/torres-4.png", "assets/images-png/torres-5.png"],
+    'ushuaia':["assets/images-png/ushuaia-1.png", "assets/images-png/ushuaia-2.png", "assets/images-png/ushuaia-3.png", "assets/images-png/ushuaia-4.png", "assets/images-png/ushuaia-5.png"],
+    'puerto-natales':["assets/images-png/puerto-natales-1.png", "assets/images-png/puerto-natales-2.png", "assets/images-png/puerto-natales-3.png", "assets/images-png/puerto-natales-4.png", "assets/images-png/puerto-natales-5.png"],
   };
   const gallery = id => localGallery[id] || [];
 
@@ -180,7 +180,7 @@
     return `<article class="place-card" data-region="${esc(p.region)}" data-search="${esc([p.name,p.heb,p.vibe,p.why,...p.must,...(p.sub||[]),p.food,p.practical,p.watch].join(' '))}">
       <div class="place-top"><div class="place-icon">${p.emoji}</div><div><span class="place-region">${esc(p.region)}</span><h3>${esc(p.name)}</h3><div class="place-dates">${esc(p.dates)} · ${esc(p.nights)}</div></div></div>
       <p class="place-vibe">${esc(p.vibe)}</p>
-      <div class="place-gallery" aria-label="תמונות ${esc(p.heb||p.name)}">${gallery(p.id).map((src,i)=>`<img src="${src}" alt="${esc(p.name)} – תמונה ${i+1}" loading="lazy" onerror="this.onerror=null;this.src='${(localGallery[p.id]||[])[i%Math.max(1,(localGallery[p.id]||[]).length)]||''}"/>`).join('')}</div>
+      <div class="place-gallery" aria-label="תמונות ${esc(p.heb||p.name)}">${gallery(p.id).map((src,i)=>`<img src="${src}" alt="${esc(p.name)} – תמונה ${i+1}" loading="eager" onerror="this.onerror=null;this.src='${(localGallery[p.id]||[])[i%Math.max(1,(localGallery[p.id]||[]).length)]||''}"/>`).join('')}</div>
       <p class="place-why">${esc(p.why)}</p><div class="place-story"><b>📖 מה זה המקום הזה?</b><p>${esc(p.intro||p.why)}</p><span>✨ האופי: ${esc(p.feel||p.vibe)}</span></div>
       <div class="place-grid">
         <div><b>⭐ לא לפספס</b><ul>${p.must.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
@@ -312,7 +312,7 @@
     if(!anchor || document.getElementById('learn-trip')) return;
     const section=document.createElement('section');
     section.id='learn-trip'; section.className='learn-trip'; section.setAttribute('aria-label','ללמוד על היעדים');
-    section.innerHTML=`<div class="learn-head"><div><span class="eyebrow">Travel Classroom</span><h2 class="section-title" style="margin-top:.35rem">🎓 ללמוד לטיול</h2><p class="learn-intro">מיני־קורס לפני הדרך: להבין את ההיסטוריה, הגיאוגרפיה והתרבות של כל מקום — כדי שכשתגיעי, הנוף יקבל משמעות.</p></div><div class="learn-count"><strong>${Object.keys(learning).length}</strong><span>שיעורים</span></div></div><div class="learn-tools"><input id="learn-search" type="search" placeholder="חפשי מקום, נושא או שאלה…"></div><div class="learn-list" id="learn-list">${places.map(learningCard).join('')}</div>`;
+    section.innerHTML=`<div class="learn-head"><div><span class="eyebrow">כיתת הטיול</span><h2 class="section-title" style="margin-top:.35rem">🎓 ללמוד לטיול</h2><p class="learn-intro">מיני־קורס לפני הדרך: להבין את ההיסטוריה, הגיאוגרפיה והתרבות של כל מקום — כדי שכשתגיעי, הנוף יקבל משמעות.</p></div><div class="learn-count"><strong>${Object.keys(learning).length}</strong><span>שיעורים</span></div></div><div class="learn-tools"><input id="learn-search" type="search" placeholder="חפשי מקום, נושא או שאלה…"></div><div class="learn-list" id="learn-list">${places.map(learningCard).join('')}</div>`;
     anchor.parentNode.insertBefore(section,anchor.nextSibling);
     const input=section.querySelector('#learn-search'); const cards=[...section.querySelectorAll('.learn-card')];
     input.addEventListener('input',()=>{const q=input.value.trim().toLowerCase();cards.forEach(c=>c.hidden=!!q&&!c.dataset.search.toLowerCase().includes(q));});
@@ -323,7 +323,7 @@
     if(!anchor || document.getElementById('places-guide')) return;
     const section=document.createElement('section');
     section.id='places-guide'; section.className='places-guide'; section.setAttribute('aria-label','מדריך היעדים');
-    section.innerHTML=`<div class="places-head"><div><span class="eyebrow">Destination Guide</span><h2 class="section-title" style="margin-top:.35rem">📚 מדריך לכל מקום בטיול</h2><p class="places-intro">לא רק “מה להזמין” — מה לראות, איך לחלק את הימים, מה לאכול, מה חשוב לדעת ומה אני הייתי עושה במקומך.</p></div><div class="places-count"><strong>${places.length}</strong><span>יעדי בסיס</span></div></div>
+    section.innerHTML=`<div class="places-head"><div><span class="eyebrow">מדריך היעדים</span><h2 class="section-title" style="margin-top:.35rem">📚 מדריך לכל מקום בטיול</h2><p class="places-intro">לא רק “מה להזמין” — מה לראות, איך לחלק את הימים, מה לאכול, מה חשוב לדעת ומה אני הייתי עושה במקומך.</p></div><div class="places-count"><strong>${places.length}</strong><span>יעדי בסיס</span></div></div>
       <div class="places-tools"><input id="places-search" type="search" placeholder="חפשי יעד, טרק, אוכל או אטרקציה…"><div class="place-filters"><button class="active" data-region="all">הכול</button><button data-region="ארגנטינה">🇦🇷 ארגנטינה</button><button data-region="צ׳ילה">🇨🇱 צ׳ילה</button></div></div>
       <div class="places-list" id="places-list">${places.map(card).join('')}</div>`;
     anchor.parentNode.insertBefore(section,anchor);

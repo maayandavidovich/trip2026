@@ -840,3 +840,25 @@ body.light-theme .search-result:hover{background:#f3f5f7}
 
 /* V7.8 Puerto Natales base */
 .base-card{border-style:dashed}.journey-stop.base{border-color:rgba(255,255,255,.45)}.map-dot.base{stroke-width:3}
+
+/* V7.9 — Hebrew-first visual refresh */
+:root{--bg:#f6f3ed;--panel:#fffdf9;--card:#fff;--text:#20302d;--muted:#65726e;--border:#dfe4df;--accent:#176b5c;--accent-2:#d47a43;--shadow:0 10px 30px rgba(32,48,45,.08)}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{direction:rtl;background:linear-gradient(180deg,#f8f5ef 0%,#eef3f0 100%);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.65}
+.hero{background:linear-gradient(135deg,#143f38 0%,#1f6255 58%,#c97545 150%);color:#fff}.hero-eyebrow,.hero-sub{color:rgba(255,255,255,.9)}
+.v2-nav,.quick-nav{direction:rtl;background:#fffdf9;border-color:var(--border)}.v2-nav a,.quick-nav a{color:#24534a}
+.container{max-width:1180px}.site-toolbar{background:rgba(246,243,237,.94);border-color:var(--border)}
+.search-box{background:#fff;border-color:var(--border);box-shadow:0 3px 12px rgba(0,0,0,.04)}.search-box input,.myguide-tools input,.learn-tools input,.places-tools input{color:var(--text);background:#fff}
+.tool-button,.icon-button{background:#fff;color:var(--text);border-color:var(--border)}
+.dashboard-panel,.metric-card,.mini-panel,.route-card,.myguide-card,.learn-card,.place-card,.places-count,.learn-count,.myguide-count{background:var(--panel)!important;border-color:var(--border)!important;box-shadow:var(--shadow)}
+.section-title,h2,h3{color:#183f38}.eyebrow,.place-region,.myguide-days b{color:var(--accent)}
+.tips,.canonical-route-note{background:#fff8ec!important;border-color:#ead8bc!important;color:#3f463f}
+.route-card b,.place-card h3,.myguide-card h3,.learn-card h3{color:#183f38}.route-card a,.local-map-popup a{color:var(--accent)}
+.route-card.critical{border-color:#d47a43!important}.base-card{background:#f7fbf8!important;border-color:#7ba996!important}
+.booking-list-v77 .check-item{background:#fff!important;border-color:var(--border)!important}.booking-list-v77 .check-item input{accent-color:var(--accent)}
+.place-gallery{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.place-gallery img{height:190px;background:#e9eee9;object-fit:cover;border-color:#d7dfda;box-shadow:0 4px 14px rgba(32,48,45,.08)}.place-gallery img:nth-child(n+5){display:block}
+.local-map-shell{background:#dcebe7}.local-water{fill:#dcebe7}.local-land{fill:#f6f0e5}.local-route{stroke:#176b5c}.marker-dot{fill:#176b5c}.marker-label{fill:#183f38}.local-map-controls{direction:ltr}
+.learn-card,.myguide-card,.place-card{overflow:hidden}.learn-label,.myguide-tag{color:#176b5c;background:#eef6f2}
+.site-footer{background:#173f38;color:#fff}.site-footer span,.site-footer a{color:rgba(255,255,255,.82)}
+.place-card h3,.myguide-card h3,.learn-card h3,.route-card b,.journey-stop strong{unicode-bidi:plaintext}
+@media(max-width:760px){.place-gallery{grid-template-columns:repeat(2,1fr)}.place-gallery img{height:150px}.learn-list{grid-template-columns:1fr}}

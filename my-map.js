@@ -8,7 +8,7 @@
     ['Carretera Austral',-45.5712,-72.0685,'2–8 Nov'],
     ['El Chaltén',-49.3315,-72.8863,'8–14 Nov'],
     ['El Calafate',-50.3370,-72.2648,'14–20 Nov'],
-    ['Puerto Natales',-51.7260,-72.5060,'Pre-Torres base · lodging booked'],
+    ['Puerto Natales',-51.7260,-72.5060,'בסיס לפני Torres · לינה מוזמנת'],
     ['Torres del Paine',-50.9423,-73.4068,'21–25 Nov'],
     ['Ushuaia',-54.8019,-68.3030,'26–30 Nov']
   ];
@@ -55,7 +55,7 @@
         const p=pts[+marker.dataset.i];
         const open=()=>{
           const pop=el.querySelector('.local-map-popup');
-          pop.innerHTML=`<strong>${esc(p[0])}</strong><span>${esc(p[3])}</span><a href="${mapsUrl(p[1],p[2])}" target="_blank" rel="noopener">Google Maps ↗</a>`;
+          pop.innerHTML=`<strong>${esc(p[0])}</strong><span>${esc(p[3])}</span><a href="${mapsUrl(p[1],p[2])}" target="_blank" rel="noopener">פתיחה ב־Google Maps ↗</a>`;
           pop.hidden=false;
         };
         marker.addEventListener('click',open); marker.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' ') {e.preventDefault();open();}});
