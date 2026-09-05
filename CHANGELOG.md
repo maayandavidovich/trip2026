@@ -1,7 +1,7 @@
-## V9.2 — Complete visual redesign
+## V9.3 — Complete visual redesign
 - Unified the new Patagonia editorial style across all app sections.
 - Fixed the empty next-action card by synchronizing the card IDs with booking state.
-- Added cache-busting for V9.2 assets.
+- Added cache-busting for V9.3 assets.
 
 ## V9.1
 - Unified the visual language across the entire app around the Patagonia reference: airy blue/teal/white surfaces, soft shadows, consistent rounded cards and a photo-led hero.

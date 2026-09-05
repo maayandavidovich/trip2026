@@ -1401,3 +1401,66 @@ input,select,textarea{border-radius:13px!important;box-shadow:inset 0 1px 2px rg
 .card,.panel,.info-card,.guide-section,.places-section{background:#fff!important;border-color:var(--v92-line)!important;color:var(--v92-ink)!important}
 @media(max-width:1100px){.action-grid{grid-template-columns:repeat(2,1fr)!important}.container{padding-inline:24px!important}}
 @media(max-width:700px){.container{padding:22px 14px 44px!important}.action-grid{grid-template-columns:1fr!important}.action-card{min-height:0!important}.site-footer{margin-left:-14px!important;margin-right:-14px!important;margin-bottom:-44px!important;padding:36px 18px!important}.section-title{font-size:1.9rem!important}}
+
+/* ===== V9.3 — COMPLETE LIGHT VISUAL SYSTEM ===== */
+:root{
+  --v93-ink:#123452;
+  --v93-muted:#62788a;
+  --v93-line:#dce8ed;
+  --v93-card:#ffffff;
+  --v93-soft:#f2f7f9;
+  --v93-teal:#118b82;
+  --v93-teal2:#0b6578;
+  --v93-shadow:0 10px 28px rgba(20,55,76,.08);
+}
+html,body{background:linear-gradient(180deg,#edf5f7 0,#f8fafb 42%,#eef5f7 100%)!important;color:var(--v93-ink)!important}
+body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif!important}
+/* Replace legacy dark cards/sections everywhere */
+.place-card,.myguide-card,.guide-card,.learn-card,.place-grid>div,.myguide-grid>div,.myguide-days>div,.subplaces span,
+.places-tools,.myguide-tools,.learn-tools,.places-count,.myguide-count,.place-filters button,.learn-quiz,
+.booking-filter,.critical-item,.critical-icon,.metric-card,.dashboard-panel,.mini-panel,.country-map-card,
+.country-map-head,.map-actions a,.place-icon,.place-story,.myguide-booking,.booking-list-v77 .check-item,
+.route-card,.sync-card,.booking-detail-summary,.booking-detail-item,.imported-item,.booking-all-items,
+.coordinates-table,.table-wrap,.canonical-route-note,.tips,.safari-note,.info-card,.panel,.card,.guide-section,.places-section{
+  background:#fff!important;color:var(--v93-ink)!important;border-color:var(--v93-line)!important;box-shadow:var(--v93-shadow)!important;
+}
+.place-card{border-radius:24px!important;padding:22px!important}
+.place-top{padding-bottom:6px!important}
+.place-icon{background:#e8f5f3!important;color:var(--v93-teal2)!important;border-radius:14px!important}
+.place-region,.place-card h3,.myguide-card h3,.place-grid b,.myguide-grid b,.place-story b{color:var(--v93-ink)!important}
+.place-dates,.place-why,.place-vibe,.place-grid p,.place-grid li,.place-footer,.place-tip,.myguide-card p,.myguide-grid p,.myguide-days span,.subplaces span{color:var(--v93-muted)!important}
+.place-filters button{border-radius:999px!important;background:#fff!important;color:var(--v93-muted)!important}
+.place-filters button.active{background:#dff3ef!important;color:var(--v93-teal2)!important;border-color:#bfe2db!important}
+.places-tools,.myguide-tools,.learn-tools{background:rgba(255,255,255,.94)!important;border:1px solid var(--v93-line)!important;border-radius:18px!important;padding:10px!important}
+.place-gallery{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:10px!important;margin:18px 0!important}
+.place-gallery img{display:block!important;width:100%!important;height:190px!important;object-fit:cover!important;border:0!important;border-radius:16px!important;background:#eaf1f3!important;box-shadow:0 6px 18px rgba(20,55,76,.08)!important}
+.place-story{background:linear-gradient(135deg,#f5fbfa,#f7fafc)!important;border-color:#d8e9e6!important}
+.place-footer{border-top:1px solid var(--v93-line)!important}
+.place-footer a,.map-popup-btn{color:var(--v93-teal2)!important;background:#e7f5f2!important;border-radius:10px!important;padding:8px 11px!important}
+.subplaces span{background:#f4f8f9!important;border-radius:999px!important;padding:7px 10px!important;box-shadow:none!important}
+.myguide-card,.learn-card{padding:24px!important}
+.myguide-tag,.learn-label{background:#e7f5f2!important;color:var(--v93-teal2)!important;border-color:#c9e5df!important}
+.myguide-days>div{background:#f8fbfc!important;box-shadow:none!important}
+.myguide-grid>div{background:#f7fafb!important;box-shadow:none!important}
+.myguide-booking{background:#eef8f6!important}
+/* Guide sections get a scenic visual header */
+#places-guide,.places-section{background:transparent!important;box-shadow:none!important}
+.places-head,.myguide-head,.learn-head{background:#fff!important;border:1px solid var(--v93-line)!important;border-radius:24px!important;padding:24px!important;box-shadow:var(--v93-shadow)!important}
+/* No more black country/map panels */
+.country-map-card,.live-map-card{overflow:hidden!important;background:#fff!important}
+.country-map-head{background:linear-gradient(135deg,#f1f8fa,#ffffff)!important}
+.chile-map{background:#dceff4!important}
+.map-actions a{background:#fff!important;color:var(--v93-teal2)!important;border:1px solid var(--v93-line)!important}
+/* Dashboard internals */
+.dashboard-panel,.metric-card,.mini-panel{background:#fff!important;color:var(--v93-ink)!important}
+.metric-card .metric,.critical-copy strong,.mini-panel h3{color:var(--v93-ink)!important}
+.metric-card .kicker,.metric-card .sub,.critical-copy span,.legend-row{color:var(--v93-muted)!important}
+.critical-item{background:#f7fafb!important}
+.critical-icon{background:#e8f5f3!important}
+/* Keep hero/footer photographic rather than dark blocks */
+.hero{background:linear-gradient(180deg,rgba(18,52,82,.18),rgba(11,101,120,.18)),url('assets/images-png/torres-1.png') center 55%/cover!important;color:#fff!important}
+.site-footer{background:linear-gradient(90deg,rgba(7,61,77,.80),rgba(13,103,116,.48)),url('assets/images-png/torres-1.png') center/cover!important;color:#fff!important}
+.app-update-card{background:rgba(18,63,71,.94)!important;color:#fff!important}
+/* Mobile galleries */
+@media(max-width:900px){.place-gallery{grid-template-columns:repeat(2,minmax(0,1fr))!important}.place-gallery img{height:170px!important}}
+@media(max-width:560px){.place-gallery{grid-template-columns:1fr 1fr!important}.place-gallery img{height:135px!important}.place-card,.myguide-card,.learn-card{padding:16px!important}}

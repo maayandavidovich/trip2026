@@ -1,0 +1,19 @@
+{
+  "name": "TravelOS · Maayan South America 2026",
+  "short_name": "TravelOS",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4efe7",
+  "theme_color": "#173c35",
+  "lang": "he",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "assets/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

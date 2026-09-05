@@ -159,17 +159,17 @@
   ];
 
   const localGallery = {
-    'ba-start':["assets/images-png/buenos-aires-1.png"],
-    'ba-final':["assets/images-png/buenos-aires-1.png"],
-    'iguazu':["assets/images-png/iguazu-1.png"],
-    'salta-jujuy':["assets/images-png/salta-jujuy-1.png"],
-    'bariloche':["assets/images-png/bariloche-1.png"],
-    'carretera':["assets/images-png/carretera-austral-1.png"],
-    'chalten':["assets/images-png/el-chalten-1.png"],
-    'calafate':["assets/images-png/el-calafate-1.png"],
-    'torres':["assets/images-png/torres-1.png"],
-    'ushuaia':["assets/images-png/ushuaia-1.png"],
-    'puerto-natales':["assets/images-png/puerto-natales-1.png"],
+    'ba-start':[1,2,3,4].map(n=>`assets/images-png/buenos-aires-${n}.png`),
+    'ba-final':[1,2,3,4].map(n=>`assets/images-png/buenos-aires-${n}.png`),
+    'iguazu':[1,2,3,4].map(n=>`assets/images-png/iguazu-${n}.png`),
+    'salta-jujuy':[1,2,3,4].map(n=>`assets/images-png/salta-jujuy-${n}.png`),
+    'bariloche':[1,2,3,4].map(n=>`assets/images-png/bariloche-${n}.png`),
+    'carretera':[1,2,3,4].map(n=>`assets/images-png/carretera-austral-${n}.png`),
+    'chalten':[1,2,3,4].map(n=>`assets/images-png/el-chalten-${n}.png`),
+    'calafate':[1,2,3,4].map(n=>`assets/images-png/el-calafate-${n}.png`),
+    'torres':[1,2,3,4].map(n=>`assets/images-png/torres-${n}.png`),
+    'ushuaia':[1,2,3,4].map(n=>`assets/images-png/ushuaia-${n}.png`),
+    'puerto-natales':[1,2,3,4].map(n=>`assets/images-png/puerto-natales-${n}.png`),
   };
   const gallery = id => localGallery[id] || [];
 
