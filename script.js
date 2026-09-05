@@ -1,17 +1,17 @@
 
 (function () {
   var stops = [
-    {n:1,name:'Buenos Aires',lat:-34.6037,lon:-58.3816,nights:2,x:500,y:95},
-    {n:2,name:'Iguazú',lat:-25.6953,lon:-54.4367,nights:3,x:505,y:150},
-    {n:3,name:'Salta & Jujuy',lat:-24.7821,lon:-65.4232,nights:6,x:350,y:86},
-    {n:4,name:'Bariloche',lat:-41.1335,lon:-71.3103,nights:6,x:224,y:221},
-    {n:5,name:'Carretera Austral',lat:-45.5712,lon:-72.0685,nights:6,x:166,y:287},
-    {n:6,name:'El Chaltén',lat:-49.3315,lon:-72.8863,nights:6,x:147,y:326},
-    {n:7,name:'El Calafate',lat:-50.3370,lon:-72.2648,nights:6,x:160,y:358},
-    {n:'B',name:'Puerto Natales · Pre-Torres Base',lat:-51.7260,lon:-72.5060,nights:0,x:139,y:382,base:true},
-    {n:8,name:'Torres del Paine',lat:-50.9423,lon:-73.4068,nights:4,x:126,y:365},
-    {n:9,name:'Ushuaia',lat:-54.8019,lon:-68.3030,nights:4,x:228,y:438},
-    {n:10,name:'Buenos Aires · final',lat:-34.6037,lon:-58.3816,nights:3,x:480,y:140}
+    {n:1,name:'Buenos Aires',lat:-34.6037,lon:-58.3816,לילות:2,x:500,y:95},
+    {n:2,name:'Iguazú',lat:-25.6953,lon:-54.4367,לילות:3,x:505,y:150},
+    {n:3,name:'Salta & Jujuy',lat:-24.7821,lon:-65.4232,לילות:6,x:350,y:86},
+    {n:4,name:'Bariloche',lat:-41.1335,lon:-71.3103,לילות:6,x:224,y:221},
+    {n:5,name:'Carretera Austral',lat:-45.5712,lon:-72.0685,לילות:6,x:166,y:287},
+    {n:6,name:'El Chaltén',lat:-49.3315,lon:-72.8863,לילות:6,x:147,y:326},
+    {n:7,name:'El Calafate',lat:-50.3370,lon:-72.2648,לילות:6,x:160,y:358},
+    {n:'B',name:'Puerto Natales · Pre-Torres Base',lat:-51.7260,lon:-72.5060,לילות:0,x:139,y:382,base:true},
+    {n:8,name:'Torres del Paine',lat:-50.9423,lon:-73.4068,לילות:4,x:126,y:365},
+    {n:9,name:'Ushuaia',lat:-54.8019,lon:-68.3030,לילות:4,x:228,y:438},
+    {n:10,name:'Buenos Aires · final',lat:-34.6037,lon:-58.3816,לילות:3,x:480,y:140}
   ];
   function esc(v){return String(v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
   function mapLink(s){return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(s.lat+','+s.lon);}
@@ -20,23 +20,23 @@
     var path=stops.map(function(s,i){return (i?'L':'M')+s.x+' '+s.y;}).join(' ');
     var dots=stops.map(function(s){
       var anchor=s.n===10?'end':'start', dx=s.n===10?-15:15;
-      return '<a href="'+mapLink(s)+'" target="_blank" rel="noopener"><circle class="native-dot" cx="'+s.x+'" cy="'+s.y+'" r="10"><title>'+esc(s.name)+' · '+s.nights+' nights</title></circle><text class="native-number" x="'+s.x+'" y="'+s.y+'">'+s.n+'</text><text class="native-label" text-anchor="'+anchor+'" x="'+(s.x+dx)+'" y="'+(s.y+4)+'">'+esc(s.name)+'</text></a>';
+      return '<a href="'+mapLink(s)+'" target="_blank" rel="noopener"><circle class="native-dot" cx="'+s.x+'" cy="'+s.y+'" r="10"><title>'+esc(s.name)+' · '+s.לילות+' לילות</title></circle><text class="native-number" x="'+s.x+'" y="'+s.y+'">'+s.n+'</text><text class="native-label" text-anchor="'+anchor+'" x="'+(s.x+dx)+'" y="'+(s.y+4)+'">'+esc(s.name)+'</text></a>';
     }).join('');
     return '<div class="native-map-shell"><svg viewBox="0 0 640 500" role="img" aria-label="South America trip route">'+
       '<path class="native-land" d="M242 18 C320 10 407 40 466 79 C522 116 559 166 545 211 C531 255 483 278 447 306 C416 331 405 369 381 401 C353 439 313 475 274 486 C241 478 225 454 211 421 C196 383 170 354 165 316 C159 271 182 235 189 195 C197 147 187 97 205 60 C215 40 226 27 242 18Z"/>'+
       '<path class="native-border" d="M188 198 C255 206 326 191 395 169 M170 315 C242 305 310 322 382 300 M208 420 C255 397 304 388 364 396"/>'+
       '<text class="native-water-label" x="18" y="245">Pacific Ocean</text><text class="native-water-label" x="510" y="275">Atlantic Ocean</text>'+
-      '<path class="native-route" d="'+path+'"/>'+dots+'</svg><div class="native-map-note">Built into this file · tap a stop to open Google Maps</div></div>';
+      '<path class="native-route" d="'+path+'"/>'+dots+'</svg><div class="native-map-note">המפה מובנית באתר · לחצי על יעד כדי לפתוח Google Maps</div></div>';
   }
   function miniSvg(s){
-    return '<div class="mini-native-map"><svg viewBox="0 0 180 150" role="img" aria-label="Location marker for '+esc(s.name)+'"><path class="native-land" d="M72 7 C102 5 136 24 150 50 C161 72 145 90 129 104 C112 118 106 138 88 144 C71 137 65 121 57 105 C48 87 35 75 38 55 C41 32 53 14 72 7Z"/><path class="native-border" d="M42 67 C77 71 112 62 145 57 M51 104 C82 97 108 107 132 99"/><circle class="mini-map-pin" cx="90" cy="70" r="12"/><circle cx="90" cy="70" r="4" fill="#0d1117"/></svg><div class="mini-map-copy"><strong>'+s.n+'. '+esc(s.name)+'</strong><span>'+s.lat.toFixed(2)+', '+s.lon.toFixed(2)+' · '+s.nights+' nights</span><a class="mini-map-link" href="'+mapLink(s)+'" target="_blank" rel="noopener">📍 Open in Google Maps</a></div></div>';
+    return '<div class="mini-native-map"><svg viewBox="0 0 180 150" role="img" aria-label="Location marker for '+esc(s.name)+'"><path class="native-land" d="M72 7 C102 5 136 24 150 50 C161 72 145 90 129 104 C112 118 106 138 88 144 C71 137 65 121 57 105 C48 87 35 75 38 55 C41 32 53 14 72 7Z"/><path class="native-border" d="M42 67 C77 71 112 62 145 57 M51 104 C82 97 108 107 132 99"/><circle class="mini-map-pin" cx="90" cy="70" r="12"/><circle cx="90" cy="70" r="4" fill="#0d1117"/></svg><div class="mini-map-copy"><strong>'+s.n+'. '+esc(s.name)+'</strong><span>'+s.lat.toFixed(2)+', '+s.lon.toFixed(2)+' · '+s.לילות+' לילות</span><a class="mini-map-link" href="'+mapLink(s)+'" target="_blank" rel="noopener">📍 פתיחה ב־Google Maps</a></div></div>';
   }
   var ov=document.getElementById('overview-map');
   // Static maps are embedded directly in the HTML for iPhone compatibility.
-  var total=0,html='<div class="distance-row"><span class="leg-name">1. Buenos Aires (start)</span><span class="leg-km">stay 5 nights</span></div>';
-  for(var i=1;i<stops.length;i++){var km=haversine(stops[i-1],stops[i]);total+=km;html+='<div class="distance-row"><span class="leg-name">'+i+'. '+esc(stops[i-1].name)+' → '+esc(stops[i].name)+'</span><span class="leg-km">~'+Math.round(km).toLocaleString()+' km · stay '+stops[i].nights+' nights</span></div>';}
+  var total=0,html='<div class="distance-row"><span class="leg-name">1. Buenos Aires (start)</span><span class="leg-km">stay 5 לילות</span></div>';
+  for(var i=1;i<stops.length;i++){var km=haversine(stops[i-1],stops[i]);total+=km;html+='<div class="distance-row"><span class="leg-name">'+i+'. '+esc(stops[i-1].name)+' → '+esc(stops[i].name)+'</span><span class="leg-km">~'+Math.round(km).toLocaleString()+' km · stay '+stops[i].לילות+' לילות</span></div>';}
   var totalEl=document.getElementById('dp-total'),legs=document.getElementById('dp-legs');
-  if(totalEl)totalEl.textContent='Total straight-line distance: ~'+Math.round(total).toLocaleString()+' km';
+  if(totalEl)totalEl.textContent='מרחק אווירי משוער: ~'+Math.round(total).toLocaleString()+' km';
   if(legs)legs.innerHTML=html;
 })();
 
@@ -46,9 +46,9 @@
 
   var departure=new Date('2026-10-15T22:50:00+03:00');
   var now=new Date();
-  var days=Math.max(0,Math.ceil((departure-now)/86400000));
-  var daysEl=document.getElementById('days-to-go');
-  if(daysEl)daysEl.textContent=days;
+  var יוםs=Math.max(0,Math.ceil((departure-now)/86400000));
+  var יוםsEl=document.getElementById('יוםs-to-go');
+  if(יוםsEl)יוםsEl.textContent=יוםs;
 
   var boxes=[].slice.call(document.querySelectorAll('.check-toggle'));
   var key='maayan-sa-bookings-v2';
@@ -68,10 +68,10 @@
     var done=boxes.filter(function(b){return b.checked}).length;
     var pct=boxes.length?Math.round(done/boxes.length*100):0;
     var p=document.getElementById('booking-percent'), f=document.getElementById('booking-progress'), s=document.getElementById('booking-summary');
-    if(p)p.textContent=pct+'%'; if(f)f.style.width=pct+'%'; if(s)s.textContent='הושלמו '+done+' מתוך '+boxes.length;
+    if(p)p.textContent=done+' מסודר'+(done===1?'':'ים'); if(f)f.style.width=pct+'%'; if(s)s.textContent=done+' מסודר'+(done===1?'':'ים')+' · '+(boxes.length-done)+' עדיין דורשים פעולה'; 
     var firstUrgent=boxes.find(function(b){return !b.checked && b.closest('.check-item').classList.contains('urgent')});
     var t=document.getElementById('next-action-title'),n=document.getElementById('next-action-note');
-    if(firstUrgent){var item=firstUrgent.closest('.check-item');var name=item.querySelector('.check-name');if(t&&name)t.textContent=name.childNodes[0].textContent.trim();if(n)n.textContent='פתחי את ההזמנות כדי לראות בדיוק מה חסר.';}else{if(t)t.textContent='כל ההזמנות הדחופות הושלמו';if(n)n.textContent='השלב הבא הוא לעבור על ההזמנות בעדיפות גבוהה.';}
+    var main=document.getElementById('booking-summary-main'); if(main) main.textContent=done+' מסודר'+(done===1?'':'ים')+' · '+(boxes.length-done)+' עדיין פתוח'+(boxes.length-done===1?'':'ים'); if(firstUrgent){var item=firstUrgent.closest('.check-item');var name=item.querySelector('.check-name');if(t&&name)t.textContent=name.childNodes[0].textContent.trim();if(n)n.textContent='פתחי את ההזמנות כדי לראות בדיוק מה חסר.';}else{if(t)t.textContent='כל ההזמנות הדחופות הושלמו';if(n)n.textContent='השלב הבא הוא לעבור על ההזמנות בעדיפות גבוהה.';}
   }
   update();
 })();
@@ -103,35 +103,35 @@
   const fill = document.getElementById('trip-progress-fill');
   const progressLabel = document.getElementById('trip-progress-label');
   const progressPercent = document.getElementById('trip-progress-percent');
-  const legacyDays = document.getElementById('days-to-go');
+  const legacyDays = document.getElementById('יוםs-to-go');
 
   const clamp = (n, min, max) => Math.min(max, Math.max(min, n));
-  const dayDiff = (a, b) => Math.ceil((b - a) / DAY);
+  const יוםDiff = (a, b) => Math.ceil((b - a) / DAY);
 
   if (now < start) {
-    const days = Math.max(0, dayDiff(now, start));
-    label.textContent = 'Departure countdown';
-    value.textContent = `${days} ${days === 1 ? 'day' : 'days'} to go`;
+    const יוםs = Math.max(0, יוםDiff(now, start));
+    label.textContent = 'ספירה לאחור ליציאה';
+    value.textContent = `${יוםs} ${יוםs === 1 ? 'יום' : 'יוםs'} to go`;
     detail.textContent = trip.departureLabel;
-    progressLabel.textContent = 'Pre-trip planning';
+    progressLabel.textContent = 'הכנות לטיול';
     progressPercent.textContent = '0%';
     fill.style.width = '0%';
-    if (legacyDays) legacyDays.textContent = days;
+    if (legacyDays) legacyDays.textContent = יוםs;
   } else if (now <= end) {
     const total = end - start;
     const elapsed = now - start;
     const percent = clamp(Math.round((elapsed / total) * 100), 0, 100);
-    const todayKey = now.toISOString().slice(0, 10);
-    const currentIndex = trip.stops.findIndex(s => todayKey >= s.start && todayKey <= s.end);
+    const toיוםKey = now.toISOString().slice(0, 10);
+    const currentIndex = trip.stops.findIndex(s => toיוםKey >= s.start && toיוםKey <= s.end);
     const current = currentIndex >= 0 ? trip.stops[currentIndex] : null;
     const next = currentIndex >= 0 ? trip.stops[currentIndex + 1] : null;
     label.textContent = `Day ${Math.floor(elapsed / DAY) + 1} of ${Math.ceil(total / DAY)}`;
     value.textContent = current ? `📍 ${current.name}` : 'In transit';
-    detail.textContent = next ? `Next: ${next.name}` : 'Final days in Buenos Aires';
+    detail.textContent = next ? `הבא: ${next.name}` : 'Final יוםs in Buenos Aires';
     progressLabel.textContent = 'Trip progress';
     progressPercent.textContent = `${percent}%`;
     fill.style.width = `${percent}%`;
-    if (legacyDays) legacyDays.textContent = Math.max(0, dayDiff(now, end));
+    if (legacyDays) legacyDays.textContent = Math.max(0, יוםDiff(now, end));
   } else {
     label.textContent = 'Adventure complete';
     value.textContent = 'South America 2026 ✓';
@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
       header?.setAttribute('aria-expanded', String(allExpanded));
       bodyEl?.setAttribute('aria-hidden', String(!allExpanded));
     });
-    expandButton.textContent = allExpanded ? 'Collapse all' : 'Expand all';
+    expandButton.textContent = allExpanded ? 'סגירת הכול' : 'פתיחת הכול';
   });
 
   // Global search.
@@ -241,7 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const isStop = el.classList.contains('stop');
           const title = isStop
             ? el.querySelector('.stop-name')?.textContent.trim()
-            : el.querySelector('strong,h3,h4')?.textContent.trim() || 'Booking item';
+            : el.querySelector('strong,h3,h4')?.textContent.trim() || 'משימת הזמנה';
           const snippet = (el.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 150);
           return `<a class="search-result" href="#${el.id}"><strong>${title || 'Result'}</strong><span>${snippet}</span></a>`;
         }).join('')
@@ -358,12 +358,12 @@ document.addEventListener('DOMContentLoaded', () => {
   updateBookingFilter('all');
 
   // Mark current/past journey stops and current itinerary card.
-  const today = new Date().toISOString().slice(0, 10);
+  const toיום = new Date().toISOString().slice(0, 10);
   document.querySelectorAll('.journey-stop').forEach((item, index) => {
     const start = item.dataset.start;
     const end = item.dataset.end;
-    if (today > end) item.classList.add('is-past');
-    if (today >= start && today <= end) {
+    if (toיום > end) item.classList.add('is-past');
+    if (toיום >= start && toיום <= end) {
       item.classList.add('is-current');
       document.getElementById(`stop-${index + 1}`)?.classList.add('is-current-stop');
     }

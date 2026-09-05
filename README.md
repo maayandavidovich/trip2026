@@ -1,4 +1,4 @@
-# TravelOS V8.4 — דרום אמריקה 2026
+# TravelOS V8.5 — דרום אמריקה 2026
 
 אתר טיול אישי בעברית, עם שמות מקומות באנגלית, מסלול Argentina + Chile, בסיס Puerto Natales לפני Torres, מפה מקומית, מדריכי יעדים וכיתת לימוד.
 
@@ -13,5 +13,5 @@
 פתחי `index.html` או פרסמי את התיקייה ב-GitHub Pages.
 
 
-### V8.4
+### V8.5
 Clickable booking calendar by date. Select a date (for example 1.11) to see exactly what is still missing.
