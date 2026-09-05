@@ -308,7 +308,7 @@
 if("serviceWorker" in navigator){
   window.addEventListener("load", async function(){
     try{
-      const reg=await navigator.serviceWorker.register("./sw.js?v=9.4",{updateViaCache:"none"});
+      const reg=await navigator.serviceWorker.register("./sw.js?v=9.5",{updateViaCache:"none"});
       reg.update();
       reg.addEventListener("updatefound",function(){
         const nw=reg.installing; if(!nw)return;

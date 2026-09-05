@@ -1,7 +1,11 @@
-## V9.4 — Complete visual redesign
+## V9.5
+- One wide photo per destination guide skin instead of repeated day thumbnails.
+- Consistent bright visual treatment across guide sections.
+
+## V9.5 — Complete visual redesign
 - Unified the new Patagonia editorial style across all app sections.
 - Fixed the empty next-action card by synchronizing the card IDs with booking state.
-- Added cache-busting for V9.4 assets.
+- Added cache-busting for V9.5 assets.
 
 ## V9.1
 - Unified the visual language across the entire app around the Patagonia reference: airy blue/teal/white surfaces, soft shadows, consistent rounded cards and a photo-led hero.
@@ -73,7 +77,7 @@
 - שמירה על רשימת ההזמנות והטיסות ששוחזרו ב־V8.7.
 
 
-## V9.4 — Photo-rich city guides
+## V9.5 — Photo-rich city guides
 - Added local photos to every daily itinerary card in “המדריך שלי”.
 - Added scenic header photo for each guide destination.
 - Added Puerto Natales guide section with preparation-focused itinerary.
