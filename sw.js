@@ -1,4 +1,4 @@
-const CACHE = 'travelos-v8-6';
+const CACHE = 'travelos-v8-9';
 const CORE = [
   './', './index.html', './style.css', './script.js', './my-map.js',
   './places-guide.js', './my-guide.js', './trip.json', './manifest.webmanifest',

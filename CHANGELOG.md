@@ -1,3 +1,11 @@
+# V8.8 — Booking history correction
+
+- Restored/confirmed from project history: The Host Puerto Iguazú, 20–22/10/2026.
+- Restored/confirmed from project history: Hostel Inn Bariloche, 28/10–01/11/2026.
+- Fixed the Bariloche lodging checklist ID/date mapping.
+- Clarified that these bookings cover only the booked nights, not every night of the destination stay.
+- Updated service-worker version/cache to V8.8.
+
 # V8.3
 - Hebrew editorial UI refinement.
 - Booking dates now show explicit missing/completed counts and clear action labels.
@@ -46,3 +54,10 @@
 - הסרת מזהי HTML כפולים שגרמו לעדכוני Dashboard לא עקביים.
 - חיזוק ניגודיות, גודל טקסט והיררכיה במחשב.
 - תג גרסה בולט וברור.
+
+
+## V8.8
+- תיקון ספירת הימים ליציאה: 15.10.2026 (40 ימים נכון ל־5.9.2026).
+- תיקון ID של מונה היציאה כדי שלא יחזור לערך ישן כמו 89.
+- cache bust מלא ל־V8.8 + service worker מעודכן.
+- שמירה על רשימת ההזמנות והטיסות ששוחזרו ב־V8.7.

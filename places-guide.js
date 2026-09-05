@@ -159,17 +159,17 @@
   ];
 
   const localGallery = {
-    'ba-start':["assets/images-png/buenos-aires-1.png", "assets/images-png/buenos-aires-2.png", "assets/images-png/buenos-aires-3.png", "assets/images-png/buenos-aires-4.png", "assets/images-png/buenos-aires-5.png"],
-    'ba-final':["assets/images-png/buenos-aires-1.png", "assets/images-png/buenos-aires-2.png", "assets/images-png/buenos-aires-3.png", "assets/images-png/buenos-aires-4.png", "assets/images-png/buenos-aires-5.png"],
-    'iguazu':["assets/images-png/iguazu-1.png", "assets/images-png/iguazu-2.png", "assets/images-png/iguazu-3.png", "assets/images-png/iguazu-4.png", "assets/images-png/iguazu-5.png"],
-    'salta-jujuy':["assets/images-png/salta-jujuy-1.png", "assets/images-png/salta-jujuy-2.png", "assets/images-png/salta-jujuy-3.png", "assets/images-png/salta-jujuy-4.png", "assets/images-png/salta-jujuy-5.png"],
-    'bariloche':["assets/images-png/bariloche-1.png", "assets/images-png/bariloche-2.png", "assets/images-png/bariloche-3.png", "assets/images-png/bariloche-4.png", "assets/images-png/bariloche-5.png"],
-    'carretera':["assets/images-png/carretera-austral-1.png", "assets/images-png/carretera-austral-2.png", "assets/images-png/carretera-austral-3.png", "assets/images-png/carretera-austral-4.png", "assets/images-png/carretera-austral-5.png"],
-    'chalten':["assets/images-png/el-chalten-1.png", "assets/images-png/el-chalten-2.png", "assets/images-png/el-chalten-3.png", "assets/images-png/el-chalten-4.png", "assets/images-png/el-chalten-5.png"],
-    'calafate':["assets/images-png/el-calafate-1.png", "assets/images-png/el-calafate-2.png", "assets/images-png/el-calafate-3.png", "assets/images-png/el-calafate-4.png", "assets/images-png/el-calafate-5.png"],
-    'torres':["assets/images-png/torres-1.png", "assets/images-png/torres-2.png", "assets/images-png/torres-3.png", "assets/images-png/torres-4.png", "assets/images-png/torres-5.png"],
-    'ushuaia':["assets/images-png/ushuaia-1.png", "assets/images-png/ushuaia-2.png", "assets/images-png/ushuaia-3.png", "assets/images-png/ushuaia-4.png", "assets/images-png/ushuaia-5.png"],
-    'puerto-natales':["assets/images-png/puerto-natales-1.png", "assets/images-png/puerto-natales-2.png", "assets/images-png/puerto-natales-3.png", "assets/images-png/puerto-natales-4.png", "assets/images-png/puerto-natales-5.png"],
+    'ba-start':[\"assets/images-png/buenos-aires-1.png"],
+    'ba-final':[\"assets/images-png/buenos-aires-1.png"],
+    'iguazu':[\"assets/images-png/iguazu-1.png"],
+    'salta-jujuy':[\"assets/images-png/salta-jujuy-1.png"],
+    'bariloche':[\"assets/images-png/bariloche-1.png"],
+    'carretera':[\"assets/images-png/carretera-austral-1.png"],
+    'chalten':[\"assets/images-png/el-chalten-1.png"],
+    'calafate':[\"assets/images-png/el-calafate-1.png"],
+    'torres':[\"assets/images-png/torres-1.png"],
+    'ushuaia':[\"assets/images-png/ushuaia-1.png"],
+    'puerto-natales':[\"assets/images-png/puerto-natales-1.png"],
   };
   const gallery = id => localGallery[id] || [];
 

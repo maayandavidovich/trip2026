@@ -1,3 +1,4 @@
+/* TravelOS V8.8 — hard cache-bust + correct departure countdown */
 
 (function () {
   var stops = [
@@ -47,7 +48,7 @@
   var departure=new Date('2026-10-15T22:50:00+03:00');
   var now=new Date();
   var יוםs=Math.max(0,Math.ceil((departure-now)/86400000));
-  var יוםsEl=document.getElementById('יוםs-to-go');
+  var יוםsEl=document.getElementById('days-to-go');
   if(יוםsEl)יוםsEl.textContent=יוםs;
 
   var boxes=[].slice.call(document.querySelectorAll('.check-toggle'));
@@ -68,10 +69,10 @@
     var done=boxes.filter(function(b){return b.checked}).length;
     var pct=boxes.length?Math.round(done/boxes.length*100):0;
     var p=document.getElementById('booking-percent'), f=document.getElementById('booking-progress'), s=document.getElementById('booking-summary');
-    if(p)p.textContent=done+' מסודר'+(done===1?'':'ים'); if(f)f.style.width=pct+'%'; if(s)s.textContent=done+' מסודר'+(done===1?'':'ים')+' · '+(boxes.length-done)+' עדיין דורשים פעולה'; 
+    if(p)p.textContent=done+' סגור'+(done===1?'':'ים'); if(f)f.style.width=pct+'%'; if(s)s.textContent=done+' סגור'+(done===1?'':'ים')+' · '+(boxes.length-done)+' עדיין דורשים פעולה'; 
     var firstUrgent=boxes.find(function(b){return !b.checked && b.closest('.check-item').classList.contains('urgent')});
     var t=document.getElementById('next-action-title'),n=document.getElementById('next-action-note');
-    var main=document.getElementById('booking-summary-main'); if(main) main.textContent=done+' מסודר'+(done===1?'':'ים')+' · '+(boxes.length-done)+' עדיין פתוח'+(boxes.length-done===1?'':'ים'); if(firstUrgent){var item=firstUrgent.closest('.check-item');var name=item.querySelector('.check-name');if(t&&name)t.textContent=name.childNodes[0].textContent.trim();if(n)n.textContent='פתחי את ההזמנות כדי לראות בדיוק מה חסר.';}else{if(t)t.textContent='כל ההזמנות הדחופות הושלמו';if(n)n.textContent='השלב הבא הוא לעבור על ההזמנות בעדיפות גבוהה.';}
+    var main=document.getElementById('booking-summary-main'); if(main) main.textContent=done+' סגור'+(done===1?'':'ים')+' · '+(boxes.length-done)+' עדיין פתוח'+(boxes.length-done===1?'':'ים'); if(firstUrgent){var item=firstUrgent.closest('.check-item');var name=item.querySelector('.check-name');if(t&&name)t.textContent=name.childNodes[0].textContent.trim();if(n)n.textContent='פתחי את ההזמנות כדי לראות בדיוק מה חסר.';}else{if(t)t.textContent='כל ההזמנות הדחופות הושלמו';if(n)n.textContent='השלב הבא הוא לעבור על ההזמנות בעדיפות גבוהה.';}
   }
   update();
 })();
@@ -103,7 +104,7 @@
   const fill = document.getElementById('trip-progress-fill');
   const progressLabel = document.getElementById('trip-progress-label');
   const progressPercent = document.getElementById('trip-progress-percent');
-  const legacyDays = document.getElementById('יוםs-to-go');
+  const legacyDays = document.getElementById('days-to-go');
 
   const clamp = (n, min, max) => Math.min(max, Math.max(min, n));
   const יוםDiff = (a, b) => Math.ceil((b - a) / DAY);
@@ -111,7 +112,7 @@
   if (now < start) {
     const יוםs = Math.max(0, יוםDiff(now, start));
     label.textContent = 'ספירה לאחור ליציאה';
-    value.textContent = `${יוםs} ${יוםs === 1 ? 'יום' : 'יוםs'} to go`;
+    value.textContent = `${יוםs} ${יוםs === 1 ? 'יום' : 'ימים'} עד היציאה`;
     detail.textContent = trip.departureLabel;
     progressLabel.textContent = 'הכנות לטיול';
     progressPercent.textContent = '0%';

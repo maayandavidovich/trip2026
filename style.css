@@ -1113,7 +1113,7 @@ p,li{font-size:16px}
   .dashboard-panel h2{font-size:1.85rem!important}
 }
 
-/* V8.7 booking clarity */
+/* V8.8 booking clarity */
 .status-badge{display:inline-block;margin-right:7px;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:850;vertical-align:middle}
 .status-badge.booked{background:#e4efe6;color:#23614f;border:1px solid #bdd3c2}
 .status-badge.open{background:#f8e5df;color:#9b4f43;border:1px solid #e8b8ad}

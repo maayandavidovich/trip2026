@@ -60,7 +60,7 @@
       "purpose": "pre-Torres base",
       "before": "Torres del Paine",
       "lodging": "booked",
-      "dates": null
+      "dates": ["2026-11-19", "2026-11-21"]
     }
   ]
 }
