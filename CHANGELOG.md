@@ -1,6 +1,11 @@
+# V8.0 — Visual Refresh
+- Warm Patagonia editorial palette
+- Full Hebrew-first interface with English place names only
+- Local image gallery retained
+
 # TravelOS Changelog
 
-## V7.9
+## V8.0
 - ממשק מלא בעברית עם שמות מקומות באנגלית.
 - RTL לכל האתר.
 - עיצוב בהיר ונקי יותר.

@@ -862,3 +862,27 @@ body{direction:rtl;background:linear-gradient(180deg,#f8f5ef 0%,#eef3f0 100%);co
 .site-footer{background:#173f38;color:#fff}.site-footer span,.site-footer a{color:rgba(255,255,255,.82)}
 .place-card h3,.myguide-card h3,.learn-card h3,.route-card b,.journey-stop strong{unicode-bidi:plaintext}
 @media(max-width:760px){.place-gallery{grid-template-columns:repeat(2,1fr)}.place-gallery img{height:150px}.learn-list{grid-template-columns:1fr}}
+
+/* V8.0 visual refresh — warm Patagonia editorial palette */
+:root{--ar:#2F5D62;--cl:#B85C43;--ar-cl:#2F6B5F;--ar-br:#8064A2;--accent:#B38A3E;--bg:#F6F1E8;--card:#FFFDF8;--border:#DED5C8;--text:#19332F;--muted:#6B7772;--green:#4E7B65;--red:#B85C43;--yellow:#B38A3E;}
+html,body{background:#F6F1E8;color:#19332F}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+.hero{background:linear-gradient(135deg,#1F4B43 0%,#2F5D62 58%,#58756D 100%);border-bottom:0;box-shadow:0 8px 30px rgba(31,75,67,.12)}
+.hero::before{background:radial-gradient(circle,rgba(235,214,164,.16) 0%,transparent 70%)}
+.hero-eyebrow{color:#E7D29A}.hero h1{color:#FFFDF8}.hero-sub{color:#DCE7E2}
+.stats{background:rgba(255,253,248,.10);border:1px solid rgba(255,255,255,.20);backdrop-filter:blur(8px)}
+.stat{border-right:1px solid rgba(255,255,255,.18)}.stat-val{color:#F1DCA7}.stat-label{color:#DCE7E2}
+.container{background:#F6F1E8}.section-header{letter-spacing:.04em;text-transform:none;font-size:13px}
+.sec-ar{background:#E7F0EF;border-left:3px solid #2F5D62;color:#285257}.sec-cl{background:#F5E6DF;border-left:3px solid #B85C43;color:#914936}.sec-arcl{background:#E5EFE9;border-left:3px solid #4E7B65;color:#35604F}.sec-arbr{background:#EEE8F3;border-left:3px solid #8064A2;color:#624C7D}
+.stop{background:#FFFDF8;border:1px solid #DED5C8;box-shadow:0 3px 12px rgba(61,49,36,.05)}.stop:hover{border-color:#B9AA98;box-shadow:0 6px 18px rgba(61,49,36,.08)}
+.stop.featured{border-color:#7A9C99;box-shadow:0 0 0 1px rgba(47,93,98,.10)}.stop.carretera{border-color:#88A88F}
+.stop-header{background:#F0E9DE}.stop.featured .stop-header{background:#E5EFEE}.stop.carretera .stop-header{background:#E8F0E9}
+.stop-num{border-right:1px solid #DED5C8}.num-circle{background:#DCD4C8;color:#30443F}.stop.featured .num-circle{background:#2F5D62}.stop.carretera .num-circle{background:#4E7B65}
+.stop-name{color:#19332F}.stop-dates{color:#6B7772}.stop-hostel{color:#2F7774}.stop-body{background:#FFFDF8}
+.trek-line{color:#315E62;background:#EAF1F0;border-left:2px solid #5B8588}.tag{background:#F1ECE3;border:1px solid #DDD3C6;color:#40504B}
+a{color:#2F6B6D}a:hover{color:#B85C43}.app-version-badge{background:#E8D8AE;color:#5B4821;border-color:#D1B873}
+.live-trip-card{background:rgba(255,253,248,.12)!important;border-color:rgba(255,255,255,.20)!important}.live-value{color:#FFF7DC!important}.live-detail{color:#DCE7E2!important}
+.card,.guide-card,.learning-card,.booking-card,.info-card{background:#FFFDF8!important;border-color:#DED5C8!important;color:#19332F}
+input,select,textarea{background:#FFFDF8!important;color:#19332F!important;border:1px solid #D5CBBE!important}input::placeholder,textarea::placeholder{color:#8A938E}
+.nav,.tabs,.filter-bar{background:#FFF9F0!important;border-color:#DED5C8!important}.nav a,.tabs a{color:#53625D}.nav a.active,.tabs a.active{color:#2F5D62;border-color:#2F5D62}
+footer{color:#6B7772}hr{border-color:#DED5C8}
