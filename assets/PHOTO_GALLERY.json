@@ -1,0 +1,101 @@
+{
+  "ba-start": {
+    "local": [
+      "assets/images-png/buenos-aires-1.svg",
+      "assets/images-png/buenos-aires-2.svg",
+      "assets/images-png/buenos-aires-3.svg",
+      "assets/images-png/buenos-aires-4.svg",
+      "assets/images-png/buenos-aires-5.svg"
+    ]
+  },
+  "ba-final": {
+    "local": [
+      "assets/images-png/buenos-aires-1.svg",
+      "assets/images-png/buenos-aires-2.svg",
+      "assets/images-png/buenos-aires-3.svg",
+      "assets/images-png/buenos-aires-4.svg",
+      "assets/images-png/buenos-aires-5.svg"
+    ]
+  },
+  "iguazu": {
+    "local": [
+      "assets/images-png/iguazu-1.svg",
+      "assets/images-png/iguazu-2.svg",
+      "assets/images-png/iguazu-3.svg",
+      "assets/images-png/iguazu-4.svg",
+      "assets/images-png/iguazu-5.svg"
+    ]
+  },
+  "salta-jujuy": {
+    "local": [
+      "assets/images-png/salta-jujuy-1.svg",
+      "assets/images-png/salta-jujuy-2.svg",
+      "assets/images-png/salta-jujuy-3.svg",
+      "assets/images-png/salta-jujuy-4.svg",
+      "assets/images-png/salta-jujuy-5.svg"
+    ]
+  },
+  "bariloche": {
+    "local": [
+      "assets/images-png/bariloche-1.svg",
+      "assets/images-png/bariloche-2.svg",
+      "assets/images-png/bariloche-3.svg",
+      "assets/images-png/bariloche-4.svg",
+      "assets/images-png/bariloche-5.svg"
+    ]
+  },
+  "carretera": {
+    "local": [
+      "assets/images-png/carretera-austral-1.svg",
+      "assets/images-png/carretera-austral-2.svg",
+      "assets/images-png/carretera-austral-3.svg",
+      "assets/images-png/carretera-austral-4.svg",
+      "assets/images-png/carretera-austral-5.svg"
+    ]
+  },
+  "chalten": {
+    "local": [
+      "assets/images-png/el-chalten-1.svg",
+      "assets/images-png/el-chalten-2.svg",
+      "assets/images-png/el-chalten-3.svg",
+      "assets/images-png/el-chalten-4.svg",
+      "assets/images-png/el-chalten-5.svg"
+    ]
+  },
+  "calafate": {
+    "local": [
+      "assets/images-png/el-calafate-1.svg",
+      "assets/images-png/el-calafate-2.svg",
+      "assets/images-png/el-calafate-3.svg",
+      "assets/images-png/el-calafate-4.svg",
+      "assets/images-png/el-calafate-5.svg"
+    ]
+  },
+  "torres": {
+    "local": [
+      "assets/images-png/torres-1.svg",
+      "assets/images-png/torres-2.svg",
+      "assets/images-png/torres-3.svg",
+      "assets/images-png/torres-4.svg",
+      "assets/images-png/torres-5.svg"
+    ]
+  },
+  "ushuaia": {
+    "local": [
+      "assets/images-png/ushuaia-1.svg",
+      "assets/images-png/ushuaia-2.svg",
+      "assets/images-png/ushuaia-3.svg",
+      "assets/images-png/ushuaia-4.svg",
+      "assets/images-png/ushuaia-5.svg"
+    ]
+  },
+  "puerto-natales": {
+    "local": [
+      "assets/images-png/puerto-natales-1.svg",
+      "assets/images-png/puerto-natales-2.svg",
+      "assets/images-png/puerto-natales-3.svg",
+      "assets/images-png/puerto-natales-4.svg",
+      "assets/images-png/puerto-natales-5.svg"
+    ]
+  }
+}
