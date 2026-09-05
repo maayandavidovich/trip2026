@@ -9,7 +9,7 @@
       "end": "2026-10-18"
     },
     {
-      "name": "Iguaz\u00fa",
+      "name": "Iguazú",
       "start": "2026-10-18",
       "end": "2026-10-21"
     },
@@ -29,7 +29,7 @@
       "end": "2026-11-08"
     },
     {
-      "name": "El Chalt\u00e9n",
+      "name": "El Chaltén",
       "start": "2026-11-08",
       "end": "2026-11-14"
     },
@@ -52,6 +52,15 @@
       "name": "Buenos Aires",
       "start": "2026-12-01",
       "end": "2026-12-04"
+    }
+  ],
+  "bases": [
+    {
+      "name": "Puerto Natales",
+      "purpose": "pre-Torres base",
+      "before": "Torres del Paine",
+      "lodging": "booked",
+      "dates": null
     }
   ]
 }

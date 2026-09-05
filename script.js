@@ -1,18 +1,17 @@
 
 (function () {
   var stops = [
-    {n:1,name:'Buenos Aires',lat:-34.60,lon:-58.38,nights:5,x:500,y:95},
-    {n:2,name:'Ushuaia',lat:-54.81,lon:-68.31,nights:3,x:228,y:438},
-    {n:3,name:'El Calafate',lat:-50.34,lon:-72.26,nights:4,x:160,y:358},
-    {n:4,name:'El Chaltén',lat:-49.33,lon:-72.89,nights:7,x:147,y:326},
-    {n:5,name:'Puerto Natales',lat:-51.73,lon:-72.51,nights:3,x:147,y:382},
-    {n:6,name:'Torres del Paine',lat:-50.94,lon:-73.41,nights:4,x:126,y:365},
-    {n:7,name:'Carretera Austral',lat:-47.50,lon:-72.50,nights:8,x:166,y:287},
-    {n:8,name:'Pucón',lat:-39.28,lon:-71.98,nights:4,x:210,y:190},
-    {n:9,name:'Bariloche',lat:-41.13,lon:-71.31,nights:3,x:224,y:221},
-    {n:10,name:'Iguazú',lat:-25.70,lon:-54.44,nights:2,x:505,y:95},
-    {n:11,name:'Salta',lat:-24.79,lon:-65.41,nights:2,x:340,y:86},
-    {n:12,name:'Buenos Aires · final',lat:-34.60,lon:-58.38,nights:2,x:480,y:140}
+    {n:1,name:'Buenos Aires',lat:-34.6037,lon:-58.3816,nights:2,x:500,y:95},
+    {n:2,name:'Iguazú',lat:-25.6953,lon:-54.4367,nights:3,x:505,y:150},
+    {n:3,name:'Salta & Jujuy',lat:-24.7821,lon:-65.4232,nights:6,x:350,y:86},
+    {n:4,name:'Bariloche',lat:-41.1335,lon:-71.3103,nights:6,x:224,y:221},
+    {n:5,name:'Carretera Austral',lat:-45.5712,lon:-72.0685,nights:6,x:166,y:287},
+    {n:6,name:'El Chaltén',lat:-49.3315,lon:-72.8863,nights:6,x:147,y:326},
+    {n:7,name:'El Calafate',lat:-50.3370,lon:-72.2648,nights:6,x:160,y:358},
+    {n:'B',name:'Puerto Natales · Pre-Torres Base',lat:-51.7260,lon:-72.5060,nights:0,x:139,y:382,base:true},
+    {n:8,name:'Torres del Paine',lat:-50.9423,lon:-73.4068,nights:4,x:126,y:365},
+    {n:9,name:'Ushuaia',lat:-54.8019,lon:-68.3030,nights:4,x:228,y:438},
+    {n:10,name:'Buenos Aires · final',lat:-34.6037,lon:-58.3816,nights:3,x:480,y:140}
   ];
   function esc(v){return String(v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
   function mapLink(s){return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(s.lat+','+s.lon);}

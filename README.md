@@ -1,24 +1,19 @@
-# TravelOS V7.6 — South America 2026
+# TravelOS V7.8 — South America 2026
 
-Personal travel app for Maayan's Argentina + Chile trip.
+Personal travel app for Maayan’s Argentina + Chile trip.
 
-## What's new in V7.6
-- 🎓 **Travel Classroom:** learn about every destination before arriving.
-- 📚 Quick facts + history + geography + culture + preparation notes.
-- ❓ A self-check question for each place.
-- 🔎 Search the learning section by place/topic/question.
-- 🗺️ Local/offline route map.
-- 🖼️ Local photo galleries in `assets/images/`.
-- 📋 Booking/action guidance.
+## What’s new in V7.8
+- 🧭 **Canonical itinerary:** the UI is synchronized to the current `trip.json` with 10 main stops, plus Puerto Natales as an explicit pre-Torres booked base.
+- 🗺️ **Local/offline route map:** no external map tiles or Leaflet dependency.
+- 🎓 **Travel Classroom:** destination learning content is bundled locally.
+- 🖼️ **Local photo galleries:** images live under `assets/images/`.
+- 📋 **Booking checklist:** priorities match the canonical route.
+- 🏷️ **Visible version badge:** V7.8 · LOCAL OFFLINE.
+
+## Canonical route
+Buenos Aires → Iguazú → Salta & Jujuy → Bariloche → Carretera Austral → El Chaltén → El Calafate → Torres del Paine → Ushuaia → Buenos Aires.
+
+Puerto Natales is shown explicitly as a **pre-Torres base** because lodging is booked there. It is intentionally not assigned invented dates in `trip.json`.
 
 ## Offline
-The destination photos and learning content are bundled locally. The route map is also local and does not require external map tiles. Links such as Google Maps only open externally when you choose them.
-
-## Files
-- `index.html` — app UI
-- `script.js` — core interactions
-- `places-guide.js` — destination guide + Travel Classroom
-- `my-guide.js` — personalized recommendations
-- `my-map.js` — local interactive map
-- `trip.json` — itinerary data
-- `assets/` — local images and asset metadata
+Photos, learning content and the route map are local. External Google Maps links open only when selected.

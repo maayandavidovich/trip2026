@@ -4,13 +4,13 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Maayan's South America Adventure · 2026 · V7.5</title>
+<title>Maayan's South America Adventure · 2026 · V7.8</title>
 <meta content="#0d1117" name="theme-color"/><meta content="Maayan's interactive South America itinerary for Argentina and Chile, October–December 2026." name="description"/><meta content="yes" name="apple-mobile-web-app-capable"/><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/><link href="style.css" rel="stylesheet"/><meta content="Maayan's South America Adventure · 2026" property="og:title"/><meta content="An interactive itinerary across Argentina and Chile." property="og:description"/><meta content="website" property="og:type"/></head>
 <body id="top"><a class="skip-link" href="#dashboard">Skip to dashboard</a>
 <div class="hero">
-<div class="hero-eyebrow">Maayan Davidovich · Personal Itinerary <span class="app-version-badge">V7.6 · LOCAL OFFLINE</span></div>
+<div class="hero-eyebrow">Maayan Davidovich · Personal Itinerary <span class="app-version-badge">V7.8 · LOCAL OFFLINE</span></div>
 <h1>South America<br/>Oct–Dec 2026</h1>
-<div class="hero-sub">Argentina &amp; Chile · ~48 Nights · 12 Stops · ~23 Trek Days</div><div aria-live="polite" class="live-trip-card">
+<div class="hero-sub">Argentina &amp; Chile · 49 Nights · 10 Stops · Patagonia-heavy route</div><div aria-live="polite" class="live-trip-card">
 <div class="live-main">
 <span class="live-icon">✈️</span>
 <div>
@@ -32,8 +32,8 @@
 <div class="stats">
 <div class="stat"><span class="stat-val">15 Oct</span><span class="stat-label">TLV Departure</span></div>
 <div class="stat"><span class="stat-val">6 Dec</span><span class="stat-label">TLV Arrival</span></div>
-<div class="stat"><span class="stat-val">~48</span><span class="stat-label">Nights</span></div>
-<div class="stat"><span class="stat-val">~23</span><span class="stat-label">Trek Days</span></div>
+<div class="stat"><span class="stat-val">49</span><span class="stat-label">Nights · 16 Oct–4 Dec</span></div>
+<div class="stat"><span class="stat-val">10</span><span class="stat-label">Main Stops</span></div>
 <div class="stat"><span class="stat-val">~$700</span><span class="stat-label">W Trek ✓</span></div>
 </div>
 </div>
@@ -77,8 +77,8 @@
 </div>
 </div>
 <div class="metric-grid">
-<div class="metric-card"><div class="kicker">Trip Length</div><div class="metric">48 nights</div><div class="sub">12 stops</div></div>
-<div class="metric-card"><div class="kicker">Trek Days</div><div class="metric">~23</div><div class="sub">including the W Trek</div></div>
+<div class="metric-card"><div class="kicker">Trip Length</div><div class="metric">49 nights</div><div class="sub">10 main stops · 3 transfer gaps</div></div>
+<div class="metric-card"><div class="kicker">Patagonia Focus</div><div class="metric">W Trek + Carretera</div><div class="sub">weather-aware hiking route</div></div>
 <div class="metric-card"><div class="kicker">Bookings</div><div class="metric" id="booking-percent">0%</div><div class="progress-track"><div class="progress-fill" id="booking-progress"></div></div><div class="sub" id="booking-summary">Calculating…</div></div>
 <div class="metric-card"><div class="kicker">Already Booked</div><div class="metric">W Trek ✓</div><div class="sub">8–12 November</div></div>
 </div>
@@ -100,595 +100,74 @@
 <div class="safari-note">This page is a self-contained HTML file. The main map and itinerary remain visible without JavaScript; booking checkmarks are stored only in the browser where you use the page.</div>
 </section><section aria-label="Trip journey" class="journey-strip">
 <div class="journey-head">
-<div><span class="eyebrow">Your journey</span><h2>12 stops, one adventure</h2></div>
+<div><span class="eyebrow">Your journey</span><h2>10 stops + 1 booked base, one adventure</h2></div>
 <div class="journey-legend"><span class="dot done"></span>Past <span class="dot current"></span>Current</div>
 </div>
 <div class="journey-scroll">
-<a class="journey-stop" data-end="2026-10-20" data-start="2026-10-16" href="#stop-1"><span class="journey-number">1</span><span><strong>Buenos Aires</strong><small>10/16–10/20</small></span></a><a class="journey-stop" data-end="2026-10-23" data-start="2026-10-21" href="#stop-2"><span class="journey-number">2</span><span><strong>Ushuaia</strong><small>10/21–10/23</small></span></a><a class="journey-stop" data-end="2026-10-27" data-start="2026-10-24" href="#stop-3"><span class="journey-number">3</span><span><strong>El Calafate</strong><small>10/24–10/27</small></span></a><a class="journey-stop" data-end="2026-11-03" data-start="2026-10-28" href="#stop-4"><span class="journey-number">4</span><span><strong>El Chaltén</strong><small>10/28–11/03</small></span></a><a class="journey-stop" data-end="2026-11-06" data-start="2026-11-04" href="#stop-5"><span class="journey-number">5</span><span><strong>Puerto Natales</strong><small>11/04–11/06</small></span></a><a class="journey-stop" data-end="2026-11-10" data-start="2026-11-07" href="#stop-6"><span class="journey-number">6</span><span><strong>Torres del Paine</strong><small>11/07–11/10</small></span></a><a class="journey-stop" data-end="2026-11-18" data-start="2026-11-11" href="#stop-7"><span class="journey-number">7</span><span><strong>Carretera Austral</strong><small>11/11–11/18</small></span></a><a class="journey-stop" data-end="2026-11-22" data-start="2026-11-19" href="#stop-8"><span class="journey-number">8</span><span><strong>Pucón</strong><small>11/19–11/22</small></span></a><a class="journey-stop" data-end="2026-11-25" data-start="2026-11-23" href="#stop-9"><span class="journey-number">9</span><span><strong>Bariloche</strong><small>11/23–11/25</small></span></a><a class="journey-stop" data-end="2026-11-27" data-start="2026-11-26" href="#stop-10"><span class="journey-number">10</span><span><strong>Iguazú</strong><small>11/26–11/27</small></span></a><a class="journey-stop" data-end="2026-11-29" data-start="2026-11-28" href="#stop-11"><span class="journey-number">11</span><span><strong>Salta</strong><small>11/28–11/29</small></span></a><a class="journey-stop" data-end="2026-12-06" data-start="2026-11-30" href="#stop-12"><span class="journey-number">12</span><span><strong>Buenos Aires</strong><small>11/30–12/06</small></span></a>
+<a class="journey-stop" href="#stop-1"><span class="journey-number">1</span><span><strong>Buenos Aires</strong><small>16–18 Oct</small></span></a>
+<a class="journey-stop" href="#stop-2"><span class="journey-number">2</span><span><strong>Iguazú</strong><small>18–21 Oct</small></span></a>
+<a class="journey-stop" href="#stop-3"><span class="journey-number">3</span><span><strong>Salta &amp; Jujuy</strong><small>21–27 Oct</small></span></a>
+<a class="journey-stop" href="#stop-4"><span class="journey-number">4</span><span><strong>Bariloche</strong><small>27 Oct–2 Nov</small></span></a>
+<a class="journey-stop" href="#stop-5"><span class="journey-number">5</span><span><strong>Carretera Austral</strong><small>2–8 Nov</small></span></a>
+<a class="journey-stop" href="#stop-6"><span class="journey-number">6</span><span><strong>El Chaltén</strong><small>8–14 Nov</small></span></a>
+<a class="journey-stop" href="#stop-7"><span class="journey-number">7</span><span><strong>El Calafate</strong><small>14–20 Nov</small></span></a>
+<a class="journey-stop base" href="#puerto-natales-base"><span class="journey-number">★</span><span><strong>Puerto Natales</strong><small>Pre-Torres · לינה מוזמנת</small></span></a>
+<a class="journey-stop" href="#stop-8"><span class="journey-number">8</span><span><strong>Torres del Paine</strong><small>21–25 Nov</small></span></a>
+<a class="journey-stop" href="#stop-9"><span class="journey-number">9</span><span><strong>Ushuaia</strong><small>26–30 Nov</small></span></a>
+<a class="journey-stop" href="#stop-10"><span class="journey-number">10</span><span><strong>Buenos Aires</strong><small>1–4 Dec</small></span></a>
 </div>
 </section>
-<h2 class="section-title" id="route" style="margin-top:0;">🗺 Full Route</h2>
-<div class="overview-map-wrap">
-<div class="live-map-card"><div class="live-map-head"><div><span class="eyebrow">V7.6 · Local + Learn</span><h3>🗺️ המפה האינטראקטיבית</h3><p>מפה מקומית — עובדת גם בלי אינטרנט. לחצי על יעד כדי לראות פרטים; Google Maps ייפתח רק אם תבחרי.</p></div><button id="fit-map" type="button">התאימי למסלול</button></div><div id="travel-map" aria-label="Interactive South America itinerary map"></div></div>
-<div class="overview-map" id="overview-map"><div class="native-map-shell static-map">
-<svg aria-label="South America itinerary" role="img" viewbox="0 0 640 540">
-<rect fill="#0f1720" height="540" width="640"></rect>
-<path class="native-land" d="M250 20 C330 12 420 42 480 84 C530 120 560 166 548 214 C535 262 490 290 452 320 C420 347 405 387 378 423 C348 463 310 504 270 520 C238 510 220 480 207 445 C191 402 165 370 160 328 C155 284 179 244 188 201 C198 153 190 105 208 65 C219 42 233 28 250 20Z"></path>
-<path class="native-border" d="M190 205 C255 212 327 196 398 174 M164 326 C235 315 306 334 382 307 M207 444 C255 417 310 405 366 414"></path>
-<text class="native-water-label" x="18" y="280">Pacific</text><text class="native-water-label" x="530" y="290">Atlantic</text>
-<path class="native-route" d="M455 125 L230 472 L170 395 L154 360 L146 420 L122 397 L178 318 L220 215 L235 250 L505 150 L350 104 L480 145"></path>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=-34.6,-58.38" rel="noopener" target="_blank"><circle class="native-dot" cx="455" cy="125" r="13"></circle><text class="native-number" x="455" y="125">1</text><text class="native-label" text-anchor="end" x="438" y="119">Buenos Aires</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=-54.81,-68.31" rel="noopener" target="_blank"><circle class="native-dot" cx="230" cy="472" r="13"></circle><text class="native-number" x="230" y="472">2</text><text class="native-label" x="248" y="478">Ushuaia</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=-50.34,-72.26" rel="noopener" target="_blank"><circle class="native-dot" cx="170" cy="395" r="13"></circle><text class="native-number" x="170" y="395">3</text><text class="native-label" x="188" y="390">El Calafate</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=-49.33,-72.89" rel="noopener" target="_blank"><circle class="native-dot" cx="154" cy="360" r="13"></circle><text class="native-number" x="154" y="360">4</text><text class="native-label" x="172" y="355">El Chaltén</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=-51.73,-72.51" rel="noopener" target="_blank"><circle class="native-dot" cx="146" cy="420" r="13"></circle><text class="native-number" x="146" y="420">5</text><text class="native-label" x="164" y="432">Puerto Natales</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=-50.94,-73.41" rel="noopener" target="_blank"><circle class="native-dot" cx="122" cy="397" r="13"></circle><text class="native-number" x="122" y="397">6</text><text class="native-label" text-anchor="end" x="104" y="392">Torres del Paine</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=-47.5,-72.5" rel="noopener" target="_blank"><circle class="native-dot" cx="178" cy="318" r="13"></circle><text class="native-number" x="178" y="318">7</text><text class="native-label" x="196" y="313">Carretera Austral</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=-39.28,-71.98" rel="noopener" target="_blank"><circle class="native-dot" cx="220" cy="215" r="13"></circle><text class="native-number" x="220" y="215">8</text><text class="native-label" text-anchor="end" x="202" y="210">Pucón</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=-41.13,-71.31" rel="noopener" target="_blank"><circle class="native-dot" cx="235" cy="250" r="13"></circle><text class="native-number" x="235" y="250">9</text><text class="native-label" x="253" y="256">Bariloche</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=-25.7,-54.44" rel="noopener" target="_blank"><circle class="native-dot" cx="505" cy="150" r="13"></circle><text class="native-number" x="505" y="150">10</text><text class="native-label" x="523" y="156">Iguazú</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=-24.79,-65.41" rel="noopener" target="_blank"><circle class="native-dot" cx="350" cy="104" r="13"></circle><text class="native-number" x="350" y="104">11</text><text class="native-label" x="368" y="110">Salta</text></a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=-34.6,-58.38" rel="noopener" target="_blank"><circle class="native-dot" cx="480" cy="145" r="13"></circle><text class="native-number" x="480" y="145">12</text><text class="native-label" text-anchor="end" x="462" y="151">Buenos Aires · final</text></a>
-</svg><div class="native-map-note">Map embedded in the file · click a stop to open Google Maps</div></div></div>
-<section aria-label="Chile map" class="country-map-section" id="chile-map">
-<div class="country-map-card">
-<div class="country-map-head">
-<h2>🇨🇱 Chile Route Map</h2>
-<p>Puerto Natales → Torres del Paine → Carretera Austral → Pucón. The map is embedded and also works without JavaScript.</p>
-</div>
-<svg aria-label="Chile itinerary map" class="chile-map" role="img" viewbox="0 0 720 760">
-<rect fill="#111820" height="760" width="720"></rect>
-<path class="chile-land" d="M408 35 C385 86 394 125 370 167 C350 203 369 246 349 286 C329 324 341 365 320 409 C300 448 305 497 278 541 C252 584 248 626 225 681 L274 718 C307 665 319 619 339 575 C361 526 372 481 388 435 C407 382 418 334 434 282 C451 227 459 173 473 116 C482 80 477 52 468 34 Z"></path>
-<path class="chile-route" d="M280 655 L248 625 L267 485 L349 310"></path>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=-51.73,-72.51" rel="noopener" target="_blank">
-<circle class="chile-dot" cx="280" cy="655" r="16"></circle><text class="chile-num" x="280" y="655">1</text>
-<text class="chile-label" x="306" y="650">Puerto Natales</text><text class="chile-sub" x="306" y="670">3 nights · gateway to the park</text>
-</a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=-50.94,-73.41" rel="noopener" target="_blank">
-<circle class="chile-dot" cx="248" cy="625" r="16"></circle><text class="chile-num" x="248" y="625">2</text>
-<text class="chile-label" text-anchor="end" x="220" y="616">Torres del Paine</text><text class="chile-sub" text-anchor="end" x="220" y="636">4 nights · W Trek / day hikes</text>
-</a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=-47.5,-72.5" rel="noopener" target="_blank">
-<circle class="chile-dot" cx="267" cy="485" r="16"></circle><text class="chile-num" x="267" y="485">3</text>
-<text class="chile-label" x="294" y="480">Carretera Austral</text><text class="chile-sub" x="294" y="501">8 nights · rental car and border crossings</text>
-</a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=-39.28,-71.98" rel="noopener" target="_blank">
-<circle class="chile-dot" cx="349" cy="310" r="16"></circle><text class="chile-num" x="349" y="310">4</text>
-<text class="chile-label" x="376" y="305">Pucón</text><text class="chile-sub" x="376" y="326">Lakes, hot springs and Villarrica Volcano</text>
-</a>
-<text fill="#e8b84b" font-size="14" font-weight="800" x="38" y="55">NORTH ↑</text>
-<text fill="#9ba7b4" font-size="12" x="38" y="715">Click a stop to open Google Maps</text>
-</svg>
-<div class="map-actions">
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Puerto+Natales+Chile" rel="noopener" target="_blank">Puerto Natales</a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Torres+del+Paine" rel="noopener" target="_blank">Torres del Paine</a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Carretera+Austral" rel="noopener" target="_blank">Carretera Austral</a>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=Pucon+Chile" rel="noopener" target="_blank">Pucón</a>
-</div>
-</div>
-</section>
-<div class="distance-panel">
-<div class="dp-total" id="dp-total">Total straight-line distance: calculating…</div>
-<div id="dp-legs"></div>
-</div>
-</div>
-<div class="flight-card">
-<h3>✈️ Outbound Flight — TLV → EZE</h3>
-<div class="flight-leg">
-<span class="flight-num">EK 2168<br/>FZ 1054</span>
-<span class="flight-route"><b>Tel Aviv</b> (TLV, Terminal 3) → <b>Dubai</b> (DXB, Terminal 3)<br/>Operated by Flydubai</span>
-<span class="flight-time">15 Oct 22:50<br/>→ 16 Oct 03:10</span>
-</div>
-<div class="flight-leg">
-<span class="flight-num">EK 247</span>
-<span class="flight-route"><b>Dubai</b> (DXB, T3) → <b>Buenos Aires</b> (EZE, Int'l Arrivals)<br/>1 stop in Rio de Janeiro (GIG) · Operated by Emirates</span>
-<span class="flight-time">16 Oct 05:05<br/>→ 16 Oct 21:05</span>
-</div>
-<div class="flight-meta">
-      Booking ref: <b>QZFEFW</b> · Ticket 176 2212629294 · Economy Saver · Baggage: 2 checked pieces (23kg each) + 1 carry-on (7kg)<br/>
-      ⚠ You land at EZE at 21:05 on 16 Oct – that's already accounted for as your first night in Buenos Aires. Arrive at TLV ~3h before the 22:50 departure.
-    </div>
-</div>
-<!-- ARGENTINA SOUTH -->
-<div class="section-header sec-ar">🇦🇷 Argentina – South Patagonia</div>
-<div class="stop" data-collapsible="true" data-search="1 buenos aires 16–21 oct · 5 nights +2 nights 🏠 milhouse avenue · microcentro ⌄ 1 buenos aires -34.60, -58.38 · 5 nights open in google maps san telmo market la boca &amp; caminito tango show steak + malbec recoleta cemetery 🏨 also good: hotel casa calma (mid-range, quiet, recoleta) · selina recoleta (hostel+hotel hybrid) ✅ don't miss: sunday san telmo antique fair · a proper parrilla steak dinner · teatro colón tour ⚠ watch for: pickpocketing on calle florida and the subte · the &quot;mustard/spray on your shirt&quot; distraction scam · motochorros (motorbike snatch-thieves) at intersections – keep your phone off the table and out of sight near roads · la boca is fine by day, skip it after dark · bring usd cash, official atm rates lag well behind the &quot;blue dollar&quot; street rate ✈️ transfer out: fly aep → ush (ushuaia) on 21 oct · ~3h · $80–130" id="stop-1">
-<div aria-expanded="true" class="stop-header" role="button" tabindex="0">
-<div class="stop-num"><div class="num-circle">1</div></div>
-<div class="stop-meta">
-<div class="stop-name">Buenos Aires</div>
-<div class="stop-dates">16–21 Oct · 5 nights <span class="new-badge">+2 nights</span></div>
-<div class="stop-hostel">🏠 Milhouse Avenue · Microcentro</div>
-<span aria-hidden="true" class="stop-chevron">⌄</span></div>
-</div>
-<div class="stop-map" id="map-1"><div class="location-panel"><div class="location-pin">1</div><div class="location-copy"><strong>Buenos Aires</strong><span>-34.60, -58.38 · 5 nights</span></div><a class="mini-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-34.6,-58.38" rel="noopener" target="_blank">Open in Google Maps</a></div></div>
-<div aria-hidden="false" class="stop-body">
-<div class="highlights">
-<span class="tag">San Telmo market</span><span class="tag">La Boca &amp; Caminito</span>
-<span class="tag">Tango show</span><span class="tag">Steak + Malbec</span><span class="tag">Recoleta cemetery</span>
-</div>
-<div class="info-block">
-<div class="info-row stay"><span class="info-label">🏨 Also good:</span><span class="text">Hotel Casa Calma (mid-range, quiet, Recoleta) · Selina Recoleta (hostel+hotel hybrid)</span></div>
-<div class="info-row todo"><span class="info-label">✅ Don't miss:</span><span class="text">Sunday San Telmo antique fair · a proper parrilla steak dinner · Teatro Colón tour</span></div>
-<div class="info-row warn"><span class="info-label">⚠ Watch for:</span><span class="text">Pickpocketing on Calle Florida and the Subte · the "mustard/spray on your shirt" distraction scam · motochorros (motorbike snatch-thieves) at intersections – keep your phone off the table and out of sight near roads · La Boca is fine by day, skip it after dark · bring USD cash, official ATM rates lag well behind the "blue dollar" street rate</span></div>
-</div>
-<div class="transfer-line">✈️ <span>Transfer out:</span> Fly AEP → USH (Ushuaia) on 21 Oct · ~3h · $80–130</div>
-</div>
-</div>
-<div class="stop" data-collapsible="true" data-search="2 ushuaia – end of the world 21–24 oct · 3 nights short stay 🏠 antarctica hostel ⌄ 2 ushuaia -54.81, -68.31 · 3 nights open in google maps 🥾 prioritize one full hike (laguna esmeralda) + one half/full day in tierra del fuego national park tierra del fuego park costera trail ✦ laguna esmeralda beagle channel cruise no penguin tour 🏨 also good: cumbres del martial (mid-range, mountain views, small spa) · los cauquenes (splurge, on the beagle channel) ✅ don't miss: end-of-the-world train (touristy but fun) · a sail on the beagle channel at golden hour ⚠ watch for: with only two full days, keep the plan flexible around wind and rain · choose laguna esmeralda only if trail conditions are good · strong uv at this latitude despite the cold, wear sunscreen ✈️ transfer out: fly ush → fte (el calafate) · ~1.5h · $60–100 ⚠ priority: book the 21 oct aep→ush and 24 oct ush→fte flights before adding optional ushuaia tours" id="stop-2">
-<div aria-expanded="true" class="stop-header" role="button" tabindex="0">
-<div class="stop-num"><div class="num-circle">2</div></div>
-<div class="stop-meta">
-<div class="stop-name">Ushuaia – End of the World</div>
-<div class="stop-dates">21–24 Oct · 3 nights <span class="new-badge">short stay</span></div>
-<div class="stop-hostel">🏠 Antarctica Hostel</div>
-<span aria-hidden="true" class="stop-chevron">⌄</span></div>
-</div>
-<div class="stop-map" id="map-2"><div class="location-panel"><div class="location-pin">2</div><div class="location-copy"><strong>Ushuaia</strong><span>-54.81, -68.31 · 3 nights</span></div><a class="mini-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-54.81,-68.31" rel="noopener" target="_blank">Open in Google Maps</a></div></div>
-<div aria-hidden="false" class="stop-body">
-<div class="trek-line">🥾 Prioritize one full hike (Laguna Esmeralda) + one half/full day in Tierra del Fuego National Park</div>
-<div class="highlights">
-<span class="tag">Tierra del Fuego park</span><span class="tag">Costera trail</span>
-<span class="tag">✦ Laguna Esmeralda</span><span class="tag">Beagle Channel cruise</span><span class="tag">No penguin tour</span>
-</div>
-<div class="info-block">
-<div class="info-row stay"><span class="info-label">🏨 Also good:</span><span class="text">Cumbres del Martial (mid-range, mountain views, small spa) · Los Cauquenes (splurge, on the Beagle Channel)</span></div>
-<div class="info-row todo"><span class="info-label">✅ Don't miss:</span><span class="text">End-of-the-world train (touristy but fun) · a sail on the Beagle Channel at golden hour</span></div>
-<div class="info-row warn"><span class="info-label">⚠ Watch for:</span><span class="text">With only two full days, keep the plan flexible around wind and rain · choose Laguna Esmeralda only if trail conditions are good · strong UV at this latitude despite the cold, wear sunscreen</span></div>
-</div>
-<div class="transfer-line">✈️ <span>Transfer out:</span> Fly USH → FTE (El Calafate) · ~1.5h · $60–100</div>
-<div class="book-line">⚠ Priority: book the 21 Oct AEP→USH and 24 Oct USH→FTE flights before adding optional Ushuaia tours</div>
-</div>
-</div>
-<div class="stop" data-collapsible="true" data-search="3 el calafate 24–28 oct · 4 nights +1 day 🏠 america del sur hostel ⌄ 3 el calafate -50.34, -72.26 · 4 nights open in google maps 🥾 big ice trekking on perito moreno + easy laguna nimez / walichu caves day (new, weather buffer) perito moreno glacier big ice trekking with crampons lago argentino boat ✦ laguna nimez reserve glaciarium museum 🏨 also good: kau yatun (converted estancia, quiet) · notta b&amp;b (good value, central) ✅ don't miss: sunset at the glacier viewing platforms – far fewer crowds than midday ⚠ watch for: book big ice / glacier boat trips ahead for november – daily spots are limited · this is your last easy atm town before the trek, withdraw cash here · proper waterproof boots needed for the ice trek, rentals available in town 🚌 transfer out: bus el calafate → el chaltén · ~3h · $15–20" id="stop-3">
-<div aria-expanded="true" class="stop-header" role="button" tabindex="0">
-<div class="stop-num"><div class="num-circle">3</div></div>
-<div class="stop-meta">
-<div class="stop-name">El Calafate</div>
-<div class="stop-dates">24–28 Oct · 4 nights <span class="new-badge">+1 day</span></div>
-<div class="stop-hostel">🏠 America del Sur Hostel</div>
-<span aria-hidden="true" class="stop-chevron">⌄</span></div>
-</div>
-<div class="stop-map" id="map-3"><div class="location-panel"><div class="location-pin">3</div><div class="location-copy"><strong>El Calafate</strong><span>-50.34, -72.26 · 4 nights</span></div><a class="mini-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-50.34,-72.26" rel="noopener" target="_blank">Open in Google Maps</a></div></div>
-<div aria-hidden="false" class="stop-body">
-<div class="trek-line">🥾 Big Ice trekking on Perito Moreno + easy Laguna Nimez / Walichu Caves day (new, weather buffer)</div>
-<div class="highlights">
-<span class="tag">Perito Moreno Glacier</span><span class="tag">Big Ice trekking with crampons</span>
-<span class="tag">Lago Argentino boat</span><span class="tag">✦ Laguna Nimez reserve</span><span class="tag">Glaciarium museum</span>
-</div>
-<div class="info-block">
-<div class="info-row stay"><span class="info-label">🏨 Also good:</span><span class="text">Kau Yatun (converted estancia, quiet) · Notta B&amp;B (good value, central)</span></div>
-<div class="info-row todo"><span class="info-label">✅ Don't miss:</span><span class="text">Sunset at the glacier viewing platforms – far fewer crowds than midday</span></div>
-<div class="info-row warn"><span class="info-label">⚠ Watch for:</span><span class="text">Book Big Ice / glacier boat trips ahead for November – daily spots are limited · this is your last easy ATM town before the trek, withdraw cash here · proper waterproof boots needed for the ice trek, rentals available in town</span></div>
-</div>
-<div class="transfer-line">🚌 <span>Transfer out:</span> Bus El Calafate → El Chaltén · ~3h · $15–20</div>
-</div>
-</div>
-<div class="stop featured" data-collapsible="true" data-search="4 el chaltén ✦ +3 trek days 28 oct–4 nov · 7 nights 🏠 patagonia travellers hostel ⌄ 4 el chaltén -49.33, -72.89 · 7 nights open in google maps 🥾 trekking capital of the trip: fitz roy · laguna torre · loma del pliegue tumbado – all as day hikes from town, no tent (very early 4am start for laguna de los tres sunrise) fitz roy hike laguna torre laguna de los tres ✦ loma del pliegue tumbado ✦ 4am start for sunrise (no tent) all trails free condors 🏨 also good: rancho grande hostel (classic backpacker base, good bar) · nothofagus b&amp;b (quieter, mid-range) ✅ don't miss: la chocolatería for a well-earned hot chocolate after a trek day · sunset from the town's edge if fitz roy is out ⚠ watch for: small town, limited/unreliable atms – bring enough cash from el calafate · fitz roy is frequently clouded over, having 7 nights here gives you real odds of a clear-view day, don't count on day 1 · check trail conditions at the ranger station before setting out 🚌 transfer out: bus/transfer el chaltén → el calafate → puerto natales · ~5–6h total ⚠ note: 4am start is a long day (~22km) – bring a headlamp, no permit needed for day hikes" id="stop-4">
-<div aria-expanded="true" class="stop-header" role="button" tabindex="0">
-<div class="stop-num"><div class="num-circle">4</div></div>
-<div class="stop-meta">
-<div class="stop-name">El Chaltén <span class="new-badge">✦ +3 trek days</span></div>
-<div class="stop-dates">28 Oct–4 Nov · 7 nights</div>
-<div class="stop-hostel">🏠 Patagonia Travellers Hostel</div>
-<span aria-hidden="true" class="stop-chevron">⌄</span></div>
-</div>
-<div class="stop-map" id="map-4"><div class="location-panel"><div class="location-pin">4</div><div class="location-copy"><strong>El Chaltén</strong><span>-49.33, -72.89 · 7 nights</span></div><a class="mini-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-49.33,-72.89" rel="noopener" target="_blank">Open in Google Maps</a></div></div>
-<div aria-hidden="false" class="stop-body">
-<div class="trek-line">🥾 Trekking capital of the trip: Fitz Roy · Laguna Torre · Loma del Pliegue Tumbado – all as day hikes from town, no tent (very early 4am start for Laguna de los Tres sunrise)</div>
-<div class="highlights">
-<span class="tag">Fitz Roy hike</span><span class="tag">Laguna Torre</span>
-<span class="tag">Laguna de los Tres</span><span class="tag">✦ Loma del Pliegue Tumbado</span>
-<span class="tag">✦ 4am start for sunrise (no tent)</span><span class="tag">All trails FREE</span><span class="tag">Condors</span>
-</div>
-<div class="info-block">
-<div class="info-row stay"><span class="info-label">🏨 Also good:</span><span class="text">Rancho Grande Hostel (classic backpacker base, good bar) · Nothofagus B&amp;B (quieter, mid-range)</span></div>
-<div class="info-row todo"><span class="info-label">✅ Don't miss:</span><span class="text">La Chocolatería for a well-earned hot chocolate after a trek day · sunset from the town's edge if Fitz Roy is out</span></div>
-<div class="info-row warn"><span class="info-label">⚠ Watch for:</span><span class="text">Small town, limited/unreliable ATMs – bring enough cash from El Calafate · Fitz Roy is frequently clouded over, having 7 nights here gives you real odds of a clear-view day, don't count on day 1 · check trail conditions at the ranger station before setting out</span></div>
-</div>
-<div class="transfer-line">🚌 <span>Transfer out:</span> Bus/transfer El Chaltén → El Calafate → Puerto Natales · ~5–6h total</div>
-<div class="book-line">⚠ Note: 4am start is a long day (~22km) – bring a headlamp, no permit needed for day hikes</div>
-</div>
-</div>
-<!-- CHILE -->
-<div class="section-header sec-cl">🇨🇱 Chile – Patagonia</div>
-<div class="stop" data-collapsible="true" data-search="5 puerto natales ✦ +2 days 4–7 nov · 3 nights 🏠 erratic rock hostel ⌄ 5 puerto natales -51.73, -72.51 · 3 nights open in google maps 🥾 day trip: cueva del milodón + laguna sofía (new, easy day before the big trek) ⭐ erratic rock 3pm talk (mandatory) ✦ cueva del milodón gear check sleeping bag rental food shopping 🏨 also good: simple patagonia (design-y, good breakfast) · vinnhaus (cozy, central, wine bar downstairs) ✅ don't miss: dinner at afrigonia (zambian-patagonian fusion, sounds odd, genuinely great) before the trek ⚠ watch for: no atms inside torres del paine – withdraw all cash you'll need here first · double-check every refugio/campsite booking confirmation before you go in, nov books out fast · this is the town, not the ranger station – the mandatory erratic rock talk covers real trail safety, don't skip it 🚌 transfer out: bus → torres del paine (laguna amarga) · ~2h · $15 ⚠ book erratic rock hostel in advance – fills up fast in nov" id="stop-5">
-<div aria-expanded="true" class="stop-header" role="button" tabindex="0">
-<div class="stop-num"><div class="num-circle">5</div></div>
-<div class="stop-meta">
-<div class="stop-name">Puerto Natales <span class="new-badge">✦ +2 days</span></div>
-<div class="stop-dates">4–7 Nov · 3 nights</div>
-<div class="stop-hostel">🏠 Erratic Rock Hostel</div>
-<span aria-hidden="true" class="stop-chevron">⌄</span></div>
-</div>
-<div class="stop-map" id="map-5"><div class="location-panel"><div class="location-pin">5</div><div class="location-copy"><strong>Puerto Natales</strong><span>-51.73, -72.51 · 3 nights</span></div><a class="mini-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-51.73,-72.51" rel="noopener" target="_blank">Open in Google Maps</a></div></div>
-<div aria-hidden="false" class="stop-body">
-<div class="trek-line">🥾 Day trip: Cueva del Milodón + Laguna Sofía (new, easy day before the big trek)</div>
-<div class="highlights">
-<span class="tag">⭐ Erratic Rock 3pm talk (MANDATORY)</span>
-<span class="tag">✦ Cueva del Milodón</span><span class="tag">Gear check</span><span class="tag">Sleeping bag rental</span><span class="tag">Food shopping</span>
-</div>
-<div class="info-block">
-<div class="info-row stay"><span class="info-label">🏨 Also good:</span><span class="text">Simple Patagonia (design-y, good breakfast) · Vinnhaus (cozy, central, wine bar downstairs)</span></div>
-<div class="info-row todo"><span class="info-label">✅ Don't miss:</span><span class="text">Dinner at Afrigonia (Zambian-Patagonian fusion, sounds odd, genuinely great) before the trek</span></div>
-<div class="info-row warn"><span class="info-label">⚠ Watch for:</span><span class="text">No ATMs inside Torres del Paine – withdraw ALL cash you'll need here first · double-check every refugio/campsite booking confirmation before you go in, Nov books out fast · this is the town, not the ranger station – the mandatory Erratic Rock talk covers real trail safety, don't skip it</span></div>
-</div>
-<div class="transfer-line">🚌 <span>Transfer out:</span> Bus → Torres del Paine (Laguna Amarga) · ~2h · $15</div>
-<div class="book-line">⚠ Book Erratic Rock Hostel in advance – fills up fast in Nov</div>
-</div>
-</div>
-<div class="stop featured" data-collapsible="true" data-search="6 torres del paine – w trek ✅ booked 08–12 nov · 5 days · ~$700 total 🏠 torres central (single) → francés campsite (equipped) → paine grande (dorm) → grey (dorm+sheets) ⌄ 6 torres del paine -50.94, -73.41 · 4 nights open in google maps 🥾 w trek east to west · ~80km · 4 hiking days + catamaran exit day 1: mirador las torres (start 6:30am!) day 2: french valley + francés campsite day 3: paine grande → grey glacier (24km!) day 4: grey glacier refugio day 5: catamaran exit 🏨 already booked: torres central → francés (equipped camping) → paine grande → grey – see below ✅ don't miss: french valley on day 2 is the trek's best viewpoint and easy to rush past – give it time ⚠ watch for: patagonian wind is the real hazard here, not the cold – gusts regularly hit 100+ km/h and can knock you off your feet, especially on exposed ridges. in november 2025 a sudden whiteout on the o circuit's john garner pass caught a large group by surprise with tragic results – that pass isn't on the w, but it's a reminder to take posted trail closures and staff warnings seriously rather than pushing through. check the forecast every morning, carry full waterproof/windproof layers even on a clear-looking day, and don't hesitate to shorten a day if conditions turn. ⛵ transfer out: catamaran grey lake → puerto natales · fly puq → balmaceda (coyhaique) ✓ booked: refs fsal353587 (las torres) + vertice orders 6722542 &amp; 6722543 · ~$700 total · dates fixed, unchanged 💭 note: francés night is &quot;equipped camping&quot; (tent pre-set, only sleeping bag needed) – this is the one tent night in the whole trip. it's already booked &amp; paid, so changing it means checking cancellation terms first. want me to look into whether a refugio bed is available there instead?" id="stop-6">
-<div aria-expanded="true" class="stop-header" role="button" tabindex="0">
-<div class="stop-num"><div class="num-circle">6</div></div>
-<div class="stop-meta">
-<div class="stop-name">Torres del Paine – W Trek <span class="booked-badge">✅ BOOKED</span></div>
-<div class="stop-dates">08–12 Nov · 5 days · ~$700 total</div>
-<div class="stop-hostel">🏠 Torres Central (single) → Francés Campsite (equipped) → Paine Grande (dorm) → Grey (dorm+sheets)</div>
-<span aria-hidden="true" class="stop-chevron">⌄</span></div>
-</div>
-<div class="stop-map" id="map-6"><div class="location-panel"><div class="location-pin">6</div><div class="location-copy"><strong>Torres del Paine</strong><span>-50.94, -73.41 · 4 nights</span></div><a class="mini-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-50.94,-73.41" rel="noopener" target="_blank">Open in Google Maps</a></div></div>
-<div aria-hidden="false" class="stop-body">
-<div class="trek-line">🥾 W Trek East to West · ~80km · 4 hiking days + catamaran exit</div>
-<div class="highlights">
-<span class="tag">Day 1: Mirador Las Torres (start 6:30am!)</span>
-<span class="tag">Day 2: French Valley + Francés campsite</span>
-<span class="tag">Day 3: Paine Grande → Grey Glacier (24km!)</span>
-<span class="tag">Day 4: Grey Glacier refugio</span>
-<span class="tag">Day 5: Catamaran exit</span>
-</div>
-<div class="info-block">
-<div class="info-row stay"><span class="info-label">🏨 Already booked:</span><span class="text">Torres Central → Francés (equipped camping) → Paine Grande → Grey – see below</span></div>
-<div class="info-row todo"><span class="info-label">✅ Don't miss:</span><span class="text">French Valley on day 2 is the trek's best viewpoint and easy to rush past – give it time</span></div>
-<div class="info-row warn"><span class="info-label">⚠ Watch for:</span><span class="text">Patagonian wind is the real hazard here, not the cold – gusts regularly hit 100+ km/h and can knock you off your feet, especially on exposed ridges. In November 2025 a sudden whiteout on the O Circuit's John Garner Pass caught a large group by surprise with tragic results – that pass isn't on the W, but it's a reminder to take posted trail closures and staff warnings seriously rather than pushing through. Check the forecast every morning, carry full waterproof/windproof layers even on a clear-looking day, and don't hesitate to shorten a day if conditions turn.</span></div>
-</div>
-<div class="transfer-line">⛵ <span>Transfer out:</span> Catamaran Grey Lake → Puerto Natales · fly PUQ → Balmaceda (Coyhaique)</div>
-<div class="booked-line">✓ BOOKED: Refs FSAL353587 (Las Torres) + Vertice orders 6722542 &amp; 6722543 · ~$700 total · dates fixed, unchanged</div>
-<div class="book-line">💭 Note: Francés night is "equipped camping" (tent pre-set, only sleeping bag needed) – this is the one tent night in the whole trip. It's already booked &amp; paid, so changing it means checking cancellation terms first. Want me to look into whether a refugio bed is available there instead?</div>
-</div>
-</div>
-<!-- CARRETERA -->
-<div class="section-header sec-arcl">🇨🇱 Chile – Carretera Austral</div>
-<div class="stop carretera" data-collapsible="true" data-search="7 carretera austral 13–21 nov · 8 nights 🏠 lodges along route: coyhaique → cerro castillo → puerto río tranquilo → cochrane ⌄ 7 carretera austral -47.50, -72.50 · 8 nights open in google maps 🥾 cerro castillo multi-day trek (3–4 days) + exploradores glacier day + marble caves kayak ✨ marble caves (must) lago general carrera kayak 🥾 cerro castillo trek (multi-day) ✦ exploradores glacier ✦ queulat hanging glacier cochrane 🏨 also good: hacienda tres lagos (splurge, río baker) · hostería última esperanza-style lodges in cochrane – book each town separately, no chains out here ✅ don't miss: sunrise kayak at the marble caves – boat tours get crowded by mid-morning ⚠ watch for: single-lane gravel road, loose stones crack windshields – drive under 60 km/h and give trucks room · gas stations are far apart south of cochrane, fill up whenever you can and consider extra fuel canisters · cell coverage is patchy for long stretches – let your accommodation know rough arrival times · confirm the rental agreement explicitly allows crossing into argentina before you leave the depot 🚗 transfer out: continue north on carretera austral → puerto montt → pucón · rental car (kept, not dropped here anymore) ⚠ book conaf cerro castillo trek permit + lodges now – very limited availability in nov" id="stop-7">
-<div aria-expanded="true" class="stop-header" role="button" tabindex="0">
-<div class="stop-num"><div class="num-circle">7</div></div>
-<div class="stop-meta">
-<div class="stop-name">Carretera Austral</div>
-<div class="stop-dates">13–21 Nov · 8 nights</div>
-<div class="stop-hostel">🏠 Lodges along route: Coyhaique → Cerro Castillo → Puerto Río Tranquilo → Cochrane</div>
-<span aria-hidden="true" class="stop-chevron">⌄</span></div>
-</div>
-<div class="stop-map" id="map-7"><div class="location-panel"><div class="location-pin">7</div><div class="location-copy"><strong>Carretera Austral</strong><span>-47.50, -72.50 · 8 nights</span></div><a class="mini-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-47.5,-72.5" rel="noopener" target="_blank">Open in Google Maps</a></div></div>
-<div aria-hidden="false" class="stop-body">
-<div class="trek-line">🥾 Cerro Castillo multi-day trek (3–4 days) + Exploradores Glacier day + Marble Caves kayak</div>
-<div class="highlights">
-<span class="tag">✨ Marble Caves (MUST)</span><span class="tag">Lago General Carrera kayak</span>
-<span class="tag">🥾 Cerro Castillo trek (multi-day)</span><span class="tag">✦ Exploradores Glacier</span>
-<span class="tag">✦ Queulat hanging glacier</span><span class="tag">Cochrane</span>
-</div>
-<div class="info-block">
-<div class="info-row stay"><span class="info-label">🏨 Also good:</span><span class="text">Hacienda Tres Lagos (splurge, Río Baker) · Hostería Última Esperanza-style lodges in Cochrane – book each town separately, no chains out here</span></div>
-<div class="info-row todo"><span class="info-label">✅ Don't miss:</span><span class="text">Sunrise kayak at the Marble Caves – boat tours get crowded by mid-morning</span></div>
-<div class="info-row warn"><span class="info-label">⚠ Watch for:</span><span class="text">Single-lane gravel road, loose stones crack windshields – drive under 60 km/h and give trucks room · gas stations are far apart south of Cochrane, fill up whenever you can and consider extra fuel canisters · cell coverage is patchy for long stretches – let your accommodation know rough arrival times · confirm the rental agreement explicitly allows crossing into Argentina before you leave the depot</span></div>
-</div>
-<div class="transfer-line">🚗 <span>Transfer out:</span> Continue north on Carretera Austral → Puerto Montt → Pucón · rental car (kept, not dropped here anymore)</div>
-<div class="book-line">⚠ Book CONAF Cerro Castillo trek permit + lodges NOW – very limited availability in Nov</div>
-</div>
-</div>
-<!-- PUCON -->
-<div class="section-header sec-cl">🇨🇱 Chile – Pucón &amp; Lake District <span class="new-badge">✦ new stop</span></div>
-<div class="stop" data-collapsible="true" data-search="8 pucón + volcán villarrica ✦ new 21–25 nov · 4 nights 🏠 hostel in town – young/backpacker vibe ⌄ 8 pucón -39.28, -71.98 · 4 nights open in google maps 🥾 villarrica volcano summit climb (full day, crampons + ice axe, active volcano!) + huerquehue np day hike 🌋 villarrica volcano climb ✦ huerquehue national park ojos del caburgua waterfalls hot springs fish market (puerto montt en route) 🏨 also good: chili kiwi hostel (lively, on the lake) · antumalal (boutique splurge, volcano views) ✅ don't miss: los pozones hot springs after the volcano climb – less touristy than the closer ones ⚠ watch for: book the volcano climb on your first day in pucón, not your last – it gets cancelled for weather/wind/volcanic activity often and there's usually no refund for a weather no-go, only a reschedule if you have spare days · summit sits at 2,860m, expect to be out of breath even without full altitude sickness · it's a genuinely strenuous full-day climb, not for anyone very out of shape 🚗 transfer out: cross border to argentina (paso mamuil malal / tromen) → bariloche · ~4h ⚠ book: villarrica volcano climb permit + guide (mandatory, weather-dependent)" id="stop-8">
-<div aria-expanded="true" class="stop-header" role="button" tabindex="0">
-<div class="stop-num"><div class="num-circle">8</div></div>
-<div class="stop-meta">
-<div class="stop-name">Pucón + Volcán Villarrica <span class="new-badge">✦ new</span></div>
-<div class="stop-dates">21–25 Nov · 4 nights</div>
-<div class="stop-hostel">🏠 Hostel in town – young/backpacker vibe</div>
-<span aria-hidden="true" class="stop-chevron">⌄</span></div>
-</div>
-<div class="stop-map" id="map-8"><div class="location-panel"><div class="location-pin">8</div><div class="location-copy"><strong>Pucón</strong><span>-39.28, -71.98 · 4 nights</span></div><a class="mini-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-39.28,-71.98" rel="noopener" target="_blank">Open in Google Maps</a></div></div>
-<div aria-hidden="false" class="stop-body">
-<div class="trek-line">🥾 Villarrica volcano summit climb (full day, crampons + ice axe, active volcano!) + Huerquehue NP day hike</div>
-<div class="highlights">
-<span class="tag">🌋 Villarrica volcano climb</span><span class="tag">✦ Huerquehue National Park</span>
-<span class="tag">Ojos del Caburgua waterfalls</span><span class="tag">Hot springs</span>
-<span class="tag">Fish market (Puerto Montt en route)</span>
-</div>
-<div class="info-block">
-<div class="info-row stay"><span class="info-label">🏨 Also good:</span><span class="text">Chili Kiwi Hostel (lively, on the lake) · Antumalal (boutique splurge, volcano views)</span></div>
-<div class="info-row todo"><span class="info-label">✅ Don't miss:</span><span class="text">Los Pozones hot springs after the volcano climb – less touristy than the closer ones</span></div>
-<div class="info-row warn"><span class="info-label">⚠ Watch for:</span><span class="text">Book the volcano climb on your first day in Pucón, not your last – it gets cancelled for weather/wind/volcanic activity often and there's usually no refund for a weather no-go, only a reschedule if you have spare days · summit sits at 2,860m, expect to be out of breath even without full altitude sickness · it's a genuinely strenuous full-day climb, not for anyone very out of shape</span></div>
-</div>
-<div class="transfer-line">🚗 <span>Transfer out:</span> Cross border to Argentina (Paso Mamuil Malal / Tromen) → Bariloche · ~4h</div>
-<div class="book-line">⚠ Book: Villarrica volcano climb permit + guide (mandatory, weather-dependent)</div>
-</div>
-</div>
-<!-- ARGENTINA LAKE DISTRICT -->
-<div class="section-header sec-ar">🇦🇷 Argentina – Lake District</div>
-<div class="stop" data-collapsible="true" data-search="9 bariloche ✦ trimmed to 3 nights 25–28 nov · 3 nights 🏠 hospedaje penthouse 1004 – lake views ⌄ 9 bariloche -41.13, -71.31 · 3 nights open in google maps 🥾 refugio frey day trek or cerro catedral (pick one, time is tighter now), plus a day trip south to el bolsón (market + cajón del azul half-day) and back cerro catedral lago nahuel huapi chocolate + craft beer ✦ el bolsón day trip (market, cajón del azul) 🏨 also good: 1004 hostel boutique (lake views, social) · selina bariloche (good mid-range) ✅ don't miss: circuito chico scenic drive on the way back from el bolsón if there's daylight left ⚠ watch for: mountain weather changes quickly on refugio frey / cerro catedral – check conditions before heading up · the chocolate shops on the main street are fun but priced for tourists, the good stuff is a few blocks back · el bolsón round-trip is a long driving day, start early ✈️ transfer out: drop rental car · fly brc → aep → igr (iguazu), same-day connection through buenos aires 💭 note: trimmed 1 night to fit your real return flight (departs eze 4 dec 23:00, not 6 dec as originally assumed) – see flight card below" id="stop-9">
-<div aria-expanded="true" class="stop-header" role="button" tabindex="0">
-<div class="stop-num"><div class="num-circle">9</div></div>
-<div class="stop-meta">
-<div class="stop-name">Bariloche <span class="new-badge">✦ trimmed to 3 nights</span></div>
-<div class="stop-dates">25–28 Nov · 3 nights</div>
-<div class="stop-hostel">🏠 Hospedaje Penthouse 1004 – lake views</div>
-<span aria-hidden="true" class="stop-chevron">⌄</span></div>
-</div>
-<div class="stop-map" id="map-9"><div class="location-panel"><div class="location-pin">9</div><div class="location-copy"><strong>Bariloche</strong><span>-41.13, -71.31 · 3 nights</span></div><a class="mini-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-41.13,-71.31" rel="noopener" target="_blank">Open in Google Maps</a></div></div>
-<div aria-hidden="false" class="stop-body">
-<div class="trek-line">🥾 Refugio Frey day trek OR Cerro Catedral (pick one, time is tighter now), plus a day trip south to El Bolsón (market + Cajón del Azul half-day) and back</div>
-<div class="highlights">
-<span class="tag">Cerro Catedral</span><span class="tag">Lago Nahuel Huapi</span>
-<span class="tag">Chocolate + craft beer</span><span class="tag">✦ El Bolsón day trip (market, Cajón del Azul)</span>
-</div>
-<div class="info-block">
-<div class="info-row stay"><span class="info-label">🏨 Also good:</span><span class="text">1004 Hostel Boutique (lake views, social) · Selina Bariloche (good mid-range)</span></div>
-<div class="info-row todo"><span class="info-label">✅ Don't miss:</span><span class="text">Circuito Chico scenic drive on the way back from El Bolsón if there's daylight left</span></div>
-<div class="info-row warn"><span class="info-label">⚠ Watch for:</span><span class="text">Mountain weather changes quickly on Refugio Frey / Cerro Catedral – check conditions before heading up · the chocolate shops on the main street are fun but priced for tourists, the good stuff is a few blocks back · El Bolsón round-trip is a long driving day, start early</span></div>
-</div>
-<div class="transfer-line">✈️ <span>Transfer out:</span> Drop rental car · fly BRC → AEP → IGR (Iguazu), same-day connection through Buenos Aires</div>
-<div class="book-line">💭 Note: trimmed 1 night to fit your real return flight (departs EZE 4 Dec 23:00, not 6 Dec as originally assumed) – see flight card below</div>
-</div>
-</div>
-<!-- IGUAZU -->
-<div class="section-header sec-arbr">🇦🇷🇧🇷 Argentina + Brazil – Iguazu</div>
-<div class="stop" data-collapsible="true" data-search="10 iguazu falls ~28–30 nov · 2 nights 🏠 peter pan hostel · puerto iguazú ⌄ 10 iguazú -25.70, -54.44 · 2 nights open in google maps 🥾 both falls circuits back to back – argentine side day 1, brazil side + boat on day 2 argentine side – garganta del diablo upper + lower circuits brazil side – panoramic view boat under the falls 🏨 also good: la aldea de la selva lodge (jungle setting, nicer than most in town) · awasi iguazú (splurge, all-inclusive villas) ✅ don't miss: arrive right at argentine park opening (8am) – garganta del diablo is unbearably crowded by 10am ⚠ watch for: coatis bite and will grab food out of open bags – never feed them, keep bags zipped · aggressive cab drivers at the airport push add-on tours and inflated &quot;brazil visa fee&quot; claims – you don't need to pay anyone to cross the border, politely decline and book transfers in advance · use a dry bag or leave phones/cameras behind on the macuco safari boat, it soaks everything · yellow fever vaccination and mosquito repellent recommended for this region ✈️ transfer out: fly igr → sla (salta), likely via buenos aires · check connection times ✓ no advance booking needed – buy park tickets at entrance" id="stop-10">
-<div aria-expanded="true" class="stop-header" role="button" tabindex="0">
-<div class="stop-num"><div class="num-circle">10</div></div>
-<div class="stop-meta">
-<div class="stop-name">Iguazu Falls</div>
-<div class="stop-dates">~28–30 Nov · 2 nights</div>
-<div class="stop-hostel">🏠 Peter Pan Hostel · Puerto Iguazú</div>
-<span aria-hidden="true" class="stop-chevron">⌄</span></div>
-</div>
-<div class="stop-map" id="map-10"><div class="location-panel"><div class="location-pin">10</div><div class="location-copy"><strong>Iguazú</strong><span>-25.70, -54.44 · 2 nights</span></div><a class="mini-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-25.7,-54.44" rel="noopener" target="_blank">Open in Google Maps</a></div></div>
-<div aria-hidden="false" class="stop-body">
-<div class="trek-line">🥾 Both falls circuits back to back – Argentine side day 1, Brazil side + boat on day 2</div>
-<div class="highlights">
-<span class="tag">Argentine side – Garganta del Diablo</span>
-<span class="tag">Upper + Lower circuits</span>
-<span class="tag">Brazil side – panoramic view</span>
-<span class="tag">Boat under the falls</span>
-</div>
-<div class="info-block">
-<div class="info-row stay"><span class="info-label">🏨 Also good:</span><span class="text">La Aldea de la Selva Lodge (jungle setting, nicer than most in town) · Awasi Iguazú (splurge, all-inclusive villas)</span></div>
-<div class="info-row todo"><span class="info-label">✅ Don't miss:</span><span class="text">Arrive right at Argentine park opening (8am) – Garganta del Diablo is unbearably crowded by 10am</span></div>
-<div class="info-row warn"><span class="info-label">⚠ Watch for:</span><span class="text">Coatis bite and will grab food out of open bags – never feed them, keep bags zipped · aggressive cab drivers at the airport push add-on tours and inflated "Brazil visa fee" claims – you don't need to pay anyone to cross the border, politely decline and book transfers in advance · use a dry bag or leave phones/cameras behind on the Macuco Safari boat, it soaks everything · yellow fever vaccination and mosquito repellent recommended for this region</span></div>
-</div>
-<div class="transfer-line">✈️ <span>Transfer out:</span> Fly IGR → SLA (Salta), likely via Buenos Aires · check connection times</div>
-<div class="booked-line">✓ No advance booking needed – buy park tickets at entrance</div>
-</div>
-</div>
-<!-- SALTA -->
-<div class="section-header sec-ar">🇦🇷 Argentina – Salta &amp; the Villages</div>
-<div class="stop featured" data-collapsible="true" data-search="11 salta + the villages ~30 nov–2 dec · 2 nights shortened 🏠 hostel/hotel in salta city center ⌄ 11 salta -24.79, -65.41 · 2 nights open in google maps 🥾 day trips: salinas grandes salt flat + cerro de los siete colores (purmamarca) + iruya (lost village) – rent a car or join tours ✦ salinas grandes salt flat ✦ hornocol – cerro de los 14 colores ✦ iruya lost village purmamarca, tilcara, humahuaca villages salta city – colonial architecture empanadas + regional wine 🏨 also good: legado mítico salta (boutique, colonial building) · anti hostel (social, well-located for the bus terminal) ✅ don't miss: peña folk-music dinner in salta's old town – live guitar/vocals, very local ⚠ watch for: salinas grandes and the puna region sit above 3,500m – altitude sickness (soroche) is real, drink lots of water, skip alcohol your first day up there, and take it slow · the road to iruya is rough, narrow and unpaved – don't attempt it in poor weather or with an inexperienced driver, and start early since it's a full day round-trip · salta and jujuy are generally very relaxed and safe compared to buenos aires, but standard city precautions still apply at night ✈️ transfer out: fly sla → aep on 2 dec and stay two final nights in buenos aires ✅ fly from salta on 2 dec, leaving a comfortable two-night buffer before the international departure" id="stop-11">
-<div aria-expanded="true" class="stop-header" role="button" tabindex="0">
-<div class="stop-num"><div class="num-circle">11</div></div>
-<div class="stop-meta">
-<div class="stop-name">Salta + the Villages</div>
-<div class="stop-dates">~30 Nov–2 Dec · 2 nights <span class="new-badge">shortened</span></div>
-<div class="stop-hostel">🏠 Hostel/hotel in Salta city center</div>
-<span aria-hidden="true" class="stop-chevron">⌄</span></div>
-</div>
-<div class="stop-map" id="map-11"><div class="location-panel"><div class="location-pin">11</div><div class="location-copy"><strong>Salta</strong><span>-24.79, -65.41 · 2 nights</span></div><a class="mini-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-24.79,-65.41" rel="noopener" target="_blank">Open in Google Maps</a></div></div>
-<div aria-hidden="false" class="stop-body">
-<div class="trek-line">🥾 Day trips: Salinas Grandes salt flat + Cerro de los Siete Colores (Purmamarca) + Iruya (lost village) – rent a car or join tours</div>
-<div class="highlights">
-<span class="tag">✦ Salinas Grandes salt flat</span><span class="tag">✦ Hornocol – Cerro de los 14 Colores</span>
-<span class="tag">✦ Iruya lost village</span><span class="tag">Purmamarca, Tilcara, Humahuaca villages</span>
-<span class="tag">Salta city – colonial architecture</span><span class="tag">Empanadas + regional wine</span>
-</div>
-<div class="info-block">
-<div class="info-row stay"><span class="info-label">🏨 Also good:</span><span class="text">Legado Mítico Salta (boutique, colonial building) · Anti Hostel (social, well-located for the bus terminal)</span></div>
-<div class="info-row todo"><span class="info-label">✅ Don't miss:</span><span class="text">Peña folk-music dinner in Salta's old town – live guitar/vocals, very local</span></div>
-<div class="info-row warn"><span class="info-label">⚠ Watch for:</span><span class="text">Salinas Grandes and the Puna region sit above 3,500m – altitude sickness (soroche) is real, drink lots of water, skip alcohol your first day up there, and take it slow · the road to Iruya is rough, narrow and unpaved – don't attempt it in poor weather or with an inexperienced driver, and start early since it's a full day round-trip · Salta and Jujuy are generally very relaxed and safe compared to Buenos Aires, but standard city precautions still apply at night</span></div>
-</div>
-<div class="transfer-line">✈️ <span>Transfer out:</span> Fly SLA → AEP on 2 Dec and stay two final nights in Buenos Aires</div>
-<div class="book-line">✅ Fly from Salta on 2 Dec, leaving a comfortable two-night buffer before the international departure</div>
-</div>
-</div>
-<!-- BUENOS AIRES FINAL -->
-<div class="section-header sec-ar">🇦🇷 Argentina – Buenos Aires Finale</div>
-<div class="stop-card">
-<div class="stop-header">
-<div class="stop-num">12</div>
-<div>
-<div class="stop-name">Buenos Aires · Final Stay 🏁</div>
-<div class="stop-dates">2–4 Dec · 2 nights <span class="new-badge">+2 nights</span></div>
-<div class="stop-hostel">🏠 Palermo, Recoleta or San Telmo</div>
-</div>
-</div>
-<div class="stop-map" id="map-12"><div class="location-panel"><div class="location-pin">12</div><div class="location-copy"><strong>Buenos Aires · final</strong><span>-34.60, -58.38 · 2 nights</span></div><a class="mini-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=-34.6,-58.38" rel="noopener" target="_blank">Open in Google Maps</a></div></div>
-<div class="stop-body">
-<div class="tag-row"><span class="tag">Shopping + gifts</span><span class="tag">Final steak dinner</span><span class="tag">Laundry + repack</span><span class="tag">Flight buffer</span></div>
-<div class="info-row todo"><span class="info-label">✅ Best use:</span><span class="text">Keep one relaxed city day for Palermo or Recoleta, organize luggage, and enjoy a final dinner without worrying about a domestic-flight connection.</span></div>
-<div class="info-row warn"><span class="info-label">✈ Departure:</span><span class="text">On 4 Dec, leave central Buenos Aires for EZE with a generous traffic buffer before the 23:00 Emirates flight.</span></div>
-<div class="transfer-line">✈️ <span>Transfer out:</span> Hotel → EZE on 4 Dec · international departure at 23:00</div>
-</div>
-</div>
-<div class="flight-card">
-<h3>✈️ Return Flight — EZE → TLV</h3>
-<div class="flight-leg">
-<span class="flight-num">EK 248</span>
-<span class="flight-route"><b>Buenos Aires</b> (EZE, Departures Terminal) → <b>Dubai</b> (DXB, T3)<br/>1 stop in Rio de Janeiro (GIG) · Operated by Emirates</span>
-<span class="flight-time">4 Dec 23:00<br/>→ 6 Dec 00:35</span>
-</div>
-<div class="flight-leg">
-<span class="flight-num">EK 2332<br/>FZ 1327</span>
-<span class="flight-route"><b>Dubai</b> (DXB, T3) → <b>Tel Aviv</b> (TLV, T3)<br/>Operated by Flydubai</span>
-<span class="flight-time">6 Dec 02:10<br/>→ 6 Dec 07:00</span>
-</div>
-<div class="flight-meta">
-      Booking ref: <b>QZFEFW</b> · Ticket 176 2212629294 · Economy Saver · Baggage: 2 checked pieces (23kg each) + 1 carry-on (7kg)<br/>
-      ✅ <b>Improved ending:</b> this flight leaves EZE at 23:00 on 4 Dec. You now return from Salta on 2 Dec and spend two final nights in Buenos Aires, avoiding a risky same-day domestic connection before the international flight.
-    </div>
-</div>
-<!-- BOOKING CHECKLIST -->
-<h2 class="section-title">🎯 Booking Strategy</h2>
-<div class="tips">
-<strong>Book in this order:</strong> 1) date-fixed domestic flights, 2) confirm whether the one-way cross-border rental is actually permitted and affordable, 3) Carretera Austral lodges/route, 4) limited-capacity treks and refugios, 5) refundable city accommodation.<br/>
-<strong>Keep flexible:</strong> Villarrica and weather-sensitive tours should be booked with rescheduling terms whenever possible. Avoid non-refundable bookings in Pucón until the transport plan from Carretera Austral is confirmed.<br/>
-<strong>Comfortable buffer:</strong> Return to Buenos Aires on 2 Dec. On 4 Dec, leave the city with plenty of time for the drive to EZE before the 23:00 departure.
-  </div>
-<h2 class="section-title" id="bookings">📋 Booking Checklist</h2><div class="booking-tools">
-<div aria-label="Filter bookings" class="segmented-control" role="group">
-<button class="booking-filter active" data-filter="all" type="button">All</button>
-<button class="booking-filter" data-filter="open" type="button">To book</button>
-<button class="booking-filter" data-filter="done" type="button">Completed</button>
-<button class="booking-filter" data-filter="urgent" type="button">Urgent</button>
-</div>
-<span class="filter-count" id="filter-count"></span>
-</div>
-<div class="checklist">
-<div class="check-item done">
-<span class="priority-badge p-done">✅ Done</span>
-<span class="check-name">Torres Central + Francés Campsite<small>08–10 Nov · Ref: FSAL353587 · Las Torres</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="$520 ✓"><span>$520 ✓</span><input aria-label="Mark booking item complete" checked="" class="check-toggle" data-booking-id="booking-1" type="checkbox"/></label></div>
-<div class="check-item done">
-<span class="priority-badge p-done">✅ Done</span>
-<span class="check-name">Paine Grande – Bunk dorm<small>10–11 Nov · Vertice order 6722542</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="$66 ✓"><span>$66 ✓</span><input aria-label="Mark booking item complete" checked="" class="check-toggle" data-booking-id="booking-2" type="checkbox"/></label></div>
-<div class="check-item done">
-<span class="priority-badge p-done">✅ Done</span>
-<span class="check-name">Grey – Bunk with sheets<small>11–12 Nov · Vertice order 6722543</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="$114 ✓"><span>$114 ✓</span><input aria-label="Mark booking item complete" checked="" class="check-toggle" data-booking-id="booking-3" type="checkbox"/></label></div>
-<div class="check-item urgent">
-<span class="priority-badge p-now">🔴 NOW</span>
-<span class="check-name">Flight AEP → USH<small>21 Oct · Buenos Aires to Ushuaia · lock the new departure date first</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="⚠ Book now"><span>⚠ Book now</span><input aria-label="Mark booking item complete" class="check-toggle" data-booking-id="booking-4" type="checkbox"/></label></div>
-<div class="check-item urgent">
-<span class="priority-badge p-now">🔴 NOW</span>
-<span class="check-name">Flight USH → FTE<small>24 Oct · Ushuaia to El Calafate · fixed arrival date for the rest of the route</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="⚠ Book now"><span>⚠ Book now</span><input aria-label="Mark booking item complete" class="check-toggle" data-booking-id="booking-5" type="checkbox"/></label></div>
-<div class="check-item urgent">
-<span class="priority-badge p-now">🔴 NOW</span>
-<span class="check-name">Rental car – Carretera Austral + Pucón<small>~13–25 Nov · Balmaceda/Coyhaique pickup → Bariloche drop · written Chile→Argentina permit required</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="⚠ Check feasibility"><span>⚠ Check feasibility</span><input aria-label="Mark booking item complete" class="check-toggle" data-booking-id="booking-6" type="checkbox"/></label></div>
-<div class="check-item urgent">
-<span class="priority-badge p-now">🔴 NOW</span>
-<span class="check-name">Villarrica volcano climb – guide + permit<small>21–25 Nov window · weather-dependent, book flexible dates if possible</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="⚠ Book now"><span>⚠ Book now</span><input aria-label="Mark booking item complete" class="check-toggle" data-booking-id="booking-7" type="checkbox"/></label></div>
-<div class="check-item urgent">
-<span class="priority-badge p-now">🔴 NOW</span>
-<span class="check-name">Cerro Castillo trek – CONAF permit<small>13–21 Nov window · conaf.cl · limited daily quota, multi-day</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="⚠ Book now"><span>⚠ Book now</span><input aria-label="Mark booking item complete" class="check-toggle" data-booking-id="booking-8" type="checkbox"/></label></div>
-<div class="check-item soon">
-<span class="priority-badge p-soon">🟡 Soon</span>
-<span class="check-name">Erratic Rock Hostel – Puerto Natales<small>4–7 Nov · erraticrock.com</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="⬜ Book soon"><span>⬜ Book soon</span><input aria-label="Mark booking item complete" class="check-toggle" data-booking-id="booking-9" type="checkbox"/></label></div>
-<div class="check-item soon">
-<span class="priority-badge p-soon">🟡 Soon</span>
-<span class="check-name">Antarctica Hostel – Ushuaia<small>21–24 Oct · booking.com</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="⬜ Book soon"><span>⬜ Book soon</span><input aria-label="Mark booking item complete" class="check-toggle" data-booking-id="booking-10" type="checkbox"/></label></div>
-<div class="check-item soon">
-<span class="priority-badge p-soon">🟡 Soon</span>
-<span class="check-name">Patagonia Travellers – El Chaltén<small>28 Oct–4 Nov · hostelworld.com</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="⬜ Book soon"><span>⬜ Book soon</span><input aria-label="Mark booking item complete" class="check-toggle" data-booking-id="booking-11" type="checkbox"/></label></div>
-<div class="check-item soon">
-<span class="priority-badge p-soon">🟡 Soon</span>
-<span class="check-name">America del Sur – El Calafate<small>24–28 Oct · hostelworld.com</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="⬜ Book soon"><span>⬜ Book soon</span><input aria-label="Mark booking item complete" class="check-toggle" data-booking-id="booking-12" type="checkbox"/></label></div>
-<div class="check-item soon">
-<span class="priority-badge p-soon">🟡 Soon</span>
-<span class="check-name">Confirm Carretera Austral overnight route<small>13–21 Nov · align lodges, fuel stops and driving distances before paying non-refundable rates</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="⬜ Plan first"><span>⬜ Plan first</span><input aria-label="Mark booking item complete" class="check-toggle" data-booking-id="booking-13" type="checkbox"/></label></div>
-<div class="check-item soon">
-<span class="priority-badge p-soon">🟡 Soon</span>
-<span class="check-name">Lodges – Carretera Austral<small>13–21 Nov · booking.com · limited options, 8 nights!</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="⬜ Book soon"><span>⬜ Book soon</span><input aria-label="Mark booking item complete" class="check-toggle" data-booking-id="booking-14" type="checkbox"/></label></div>
-<div class="check-item soon">
-<span class="priority-badge p-soon">🟡 Soon</span>
-<span class="check-name">Hostel – Pucón<small>21–25 Nov · hostelworld.com</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="⬜ Book soon"><span>⬜ Book soon</span><input aria-label="Mark booking item complete" class="check-toggle" data-booking-id="booking-15" type="checkbox"/></label></div>
-<div class="check-item soon">
-<span class="priority-badge p-soon">🟡 Soon</span>
-<span class="check-name">Hostel/hotel – Salta<small>~30 Nov–2 Dec · 2 nights · hostelworld.com/booking.com</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="⬜ Book soon"><span>⬜ Book soon</span><input aria-label="Mark booking item complete" class="check-toggle" data-booking-id="booking-16" type="checkbox"/></label></div>
-<div class="check-item soon">
-<span class="priority-badge p-soon">🟡 Soon</span>
-<span class="check-name">Flight IGR→SLA (via Buenos Aires)<small>~30 Nov · check connection times carefully</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="⬜ Book soon"><span>⬜ Book soon</span><input aria-label="Mark booking item complete" class="check-toggle" data-booking-id="booking-17" type="checkbox"/></label></div>
-<div class="check-item urgent">
-<span class="priority-badge p-now">🔴 NOW</span>
-<span class="check-name">Flight SLA→AEP<small>2 Dec · return to Buenos Aires two nights before EK 248</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="⚠ Book now"><span>⚠ Book now</span><input aria-label="Mark booking item complete" class="check-toggle" data-booking-id="booking-18" type="checkbox"/></label></div>
-<div class="check-item soon">
-<span class="priority-badge p-soon">🟡 Soon</span>
-<span class="check-name">Sleeping bag rental (-5°C rated)<small>Before 8 Nov · Erratic Rock / gear shops Puerto Natales</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="⬜ Arrange"><span>⬜ Arrange</span><input aria-label="Mark booking item complete" class="check-toggle" data-booking-id="booking-19" type="checkbox"/></label></div>
-<div class="check-item">
-<span class="priority-badge p-later">🟢 Later</span>
-<span class="check-name">Buenos Aires final stay<small>2–4 Dec · choose Palermo, Recoleta or San Telmo · 2 nights</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="⬜"><span>⬜</span><input aria-label="Mark booking item complete" class="check-toggle" data-booking-id="booking-20" type="checkbox"/></label></div>
-<div class="check-item">
-<span class="priority-badge p-later">🟢 Later</span>
-<span class="check-name">Penthouse 1004 – Bariloche<small>25–28 Nov · booking.com</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="⬜"><span>⬜</span><input aria-label="Mark booking item complete" class="check-toggle" data-booking-id="booking-21" type="checkbox"/></label></div>
-<div class="check-item">
-<span class="priority-badge p-later">🟢 Later</span>
-<span class="check-name">Peter Pan Hostel – Iguazu<small>~28–30 Nov · hostelworld.com</small></span>
-<label style="display:flex;align-items:center;gap:6px;color:var(--muted);font-size:10px;white-space:nowrap" title="⬜"><span>⬜</span><input aria-label="Mark booking item complete" class="check-toggle" data-booking-id="booking-22" type="checkbox"/></label></div>
-</div>
-<!-- MAP COORDINATES -->
-<h2 class="section-title" id="coordinates">🗺 Route Coordinates</h2>
-<div class="table-scroll">
-<table class="map-table">
-<thead>
-<tr><th>#</th><th>Stop</th><th>Dates</th><th>Nights</th><th>Lat</th><th>Long</th><th>Notes</th></tr>
-</thead>
-<tbody>
-<tr><td>1</td><td>Buenos Aires 🇦🇷</td><td>16–21 Oct</td><td>5</td><td>-34.60</td><td>-58.38</td><td>START</td></tr>
-<tr><td>2</td><td>Ushuaia 🇦🇷</td><td>21–24 Oct</td><td>3</td><td>-54.81</td><td>-68.31</td><td>Short stay · prioritize Laguna Esmeralda or Tierra del Fuego</td></tr>
-<tr><td>3</td><td>El Calafate 🇦🇷</td><td>24–28 Oct</td><td>4</td><td>-50.34</td><td>-72.26</td><td>Perito Moreno Glacier</td></tr>
-<tr><td>4</td><td>El Chaltén 🇦🇷</td><td>28 Oct–4 Nov</td><td>7</td><td>-49.33</td><td>-72.89</td><td>Fitz Roy · 4 trek days · ⚠ small dip south from here</td></tr>
-<tr><td>5</td><td>Puerto Natales 🇨🇱</td><td>4–7 Nov</td><td>3</td><td>-51.73</td><td>-72.51</td><td>W Trek base + gear rental</td></tr>
-<tr><td>6</td><td>Torres del Paine 🇨🇱</td><td>8–12 Nov</td><td>4</td><td>-50.94</td><td>-73.41</td><td>W TREK ✅ ~$700 BOOKED · fixed</td></tr>
-<tr><td>7</td><td>Carretera Austral 🇨🇱</td><td>13–21 Nov</td><td>8</td><td>-47.50</td><td>-72.50</td><td>Marble Caves! Cerro Castillo trek · rent car here</td></tr>
-<tr><td>8</td><td>Pucón 🇨🇱</td><td>21–25 Nov</td><td>4</td><td>-39.28</td><td>-71.98</td><td>Villarrica volcano climb</td></tr>
-<tr><td>9</td><td>Bariloche 🇦🇷</td><td>25–28 Nov</td><td>3</td><td>-41.13</td><td>-71.31</td><td>+ El Bolsón day trip · drop rental car · fly out</td></tr>
-<tr><td>10</td><td>Iguazu Falls 🇦🇷🇧🇷</td><td>~28–30 Nov</td><td>2</td><td>-25.70</td><td>-54.44</td><td>Same-day connection, no BA overnight</td></tr>
-<tr><td>11</td><td>Salta 🇦🇷</td><td>~30 Nov–2 Dec</td><td>2</td><td>-24.79</td><td>-65.41</td><td>Prioritize Purmamarca + Salinas Grandes</td></tr>
-<tr><td>12</td><td>Buenos Aires 🇦🇷</td><td>2–4 Dec</td><td>2</td><td>-34.60</td><td>-58.38</td><td>Final city stay · shopping, food and flight buffer</td></tr>
-<tr style="font-weight:600;"><td></td><td>Total</td><td></td><td>48</td><td></td><td></td><td>Depart EZE 4 Dec 23:00 → land TLV 6 Dec 07:00</td></tr>
-</tbody>
-</table>
-</div>
-<div class="tips">
-<strong>💡 Key Tips:</strong><br/>
-<strong>Route direction:</strong> Now flows in mostly one direction – south to Ushuaia, then steadily north all the way to Salta. The Pucón→El Bolsón→Bariloche zigzag is gone (El Bolsón is now a day trip from Bariloche instead of a separate stop). One small unavoidable dip remains: El Chaltén → Puerto Natales briefly goes south again, because Torres del Paine's dates are fixed and El Chaltén sits north of it – fixing that would mean inventing several extra filler days elsewhere.<br/>
-<strong>Carretera Austral:</strong> 8 nights – always carry extra fuel, confirm rental car is Chile-approved and can be dropped in Argentina (Bariloche).<br/>
-<strong>Cerro Castillo:</strong> Full 3–4 day trek – needs a CONAF permit booked in advance, daily quota is limited.<br/>
-<strong>Villarrica volcano:</strong> Physically demanding full-day climb, weather cancels it often in shoulder season – build in flexibility if possible.<br/>
-<strong>El Bolsón day trip:</strong> ~4h round-trip from Bariloche – enough for the market and a short walk, not much more.<br/>
-<strong>W Trek Day 1:</strong> Start at 6:30am for Las Torres sunrise. Day 3 (Paine Grande→Grey) is 24km – leave early!<br/>
-<strong>Torres del Paine check-in:</strong> Show passport + PDI migration card for VAT exemption. Check-in 14:30–21:00 only. Dates are fixed – don't move these.<br/>
-<strong>Sleeping bag:</strong> Rent -5°C rated bag in Puerto Natales (Erratic Rock). Only needed for Francés campsite night.<br/>
-<strong>Iguazu → Salta:</strong> No direct flights – almost certainly connects through Buenos Aires. Check timing carefully.<br/>
-<strong>Salta:</strong> 2 nights – prioritize one full-day Purmamarca + Salinas Grandes excursion and keep the second day for Salta city. Skip Iruya unless you extend the stay.<br/>
-<strong>2–4 Dec – relaxed finish:</strong> Salta → Buenos Aires on 2 Dec, then two nights in the city. On 4 Dec travel directly to EZE for the 23:00 flight, with no domestic-flight connection risk.
-  </div>
-</div>
-<div class="footer">
-  South America Itinerary · Maayan Davidovich · Oct 15 (TLV departure) – Dec 6, 2026 (TLV arrival) · Updated July 2026
-</div>
-<nav aria-label="Mobile navigation" class="bottom-nav">
-<a href="#dashboard"><span>⌂</span><small>Home</small></a>
-<a href="#route"><span>🗺</span><small>Route</small></a>
-<a href="#bookings"><span>✓</span><small>Bookings</small></a>
-<button id="back-to-top" type="button"><span>↑</span><small>Top</small></button>
-</nav><script src="my-map.js"></script>
-<script defer="True" src="script.js"></script><div class="search-overlay" hidden="" id="search-overlay">
-<div class="search-results-card">
-<div class="search-results-head">
-<strong>Search results</strong>
-<button aria-label="Close search" id="close-search" type="button">×</button>
-</div>
-<div class="search-results" id="search-results"></div>
-</div>
-</div><footer class="site-footer">
+<h2 class="section-title" id="route">🗺 Full Route · V7.8 Canonical Itinerary</h2>
+<div class="canonical-route-note"><strong>זה המסלול הקובע:</strong> 10 יעדים מתוך <b>16.10–04.12.2026</b>. יש שלושה חלונות מעבר/לוגיסטיקה בין היעדים: 20–21.10, 25–26.11 ו־30.11–01.12. Puerto Natales היא בסיס אמיתי לפני Torres: לינה כבר מוזמנת. היא מוצגת בנפרד בלי להמציא תאריכים שלא נמצאים ב־trip.json.</div>
+<div class="route-cards">
+<div class="route-card" id="stop-1"><b>01 · Buenos Aires</b><span>16–18 Oct · 2 nights</span><p>פתיחה רגועה: Palermo/Recoleta, San Telmo, parrilla ו־Tango אם בא לך. להשאיר אנרגיה להמשך.</p><a href="#places-guide">פתחי מדריך יעד ↗</a></div>
+<div class="route-card" id="stop-2"><b>02 · Iguazú</b><span>18–21 Oct · 3 nights</span><p>מפלים, הצד הארגנטינאי + יום לצד הברזילאי. לתכנן את הפארק סביב שעות פתיחה ומזג האוויר.</p><a href="#places-guide">פתחי מדריך יעד ↗</a></div>
+<div class="route-card" id="stop-3"><b>03 · Salta &amp; Jujuy</b><span>21–27 Oct · 6 nights</span><p>בסיס לצפון־מערב: Purmamarca, Salinas Grandes, Quebrada de Humahuaca ו־Iruya לפי קצב ומזג אוויר.</p><a href="#places-guide">פתחי מדריך יעד ↗</a></div>
+<div class="route-card" id="stop-4"><b>04 · Bariloche</b><span>27 Oct–2 Nov · 6 nights</span><p>אגמים, Cerro Campanario, Circuito Chico, hikes באזור Nahuel Huapi ויום גמיש למזג האוויר.</p><a href="#places-guide">פתחי מדריך יעד ↗</a></div>
+<div class="route-card" id="stop-5"><b>05 · Carretera Austral</b><span>2–8 Nov · 6 nights</span><p>החלק ההרפתקני: כבישי עפר, Cerro Castillo, Río Tranquilo וה־Marble Caves. לתדלק בכל הזדמנות ולשמור buffer.</p><a href="#places-guide">פתחי מדריך יעד ↗</a></div>
+<div class="route-card" id="stop-6"><b>06 · El Chaltén</b><span>8–14 Nov · 6 nights</span><p>Fitz Roy, Laguna Torre, Laguna de los Tres ו־Loma del Pliegue Tumbado. שישה לילות נותנים מרווח מזג אוויר.</p><a href="#places-guide">פתחי מדריך יעד ↗</a></div>
+<div class="route-card" id="stop-7"><b>07 · El Calafate</b><span>14–20 Nov · 6 nights</span><p>Perito Moreno, שייט/פעילות קרח, Laguna Nimez ויום באפר. בסיס נוח לפני Torres.</p><a href="#places-guide">פתחי מדריך יעד ↗</a></div>
+<div class="route-card base-card" id="puerto-natales-base"><b>★ · Puerto Natales · Pre-Torres Base</b><span>לפני 21 Nov · לינה מוזמנת</span><p>הבסיס להתארגנות לפני Torres: אוכל, ציוד, כביסה, מזומן, בדיקת מזג אוויר ואוטובוס/העברה לפארק. אין כאן תאריך מומצא — ברגע שתאריך הלינה ידוע אפשר לעדכן גם את לוח הזמנים.</p><a href="#places-guide">פתחי מדריך Puerto Natales ↗</a></div>
+<div class="route-card critical" id="stop-8"><b>08 · Torres del Paine</b><span>21–25 Nov · 4 nights · W Trek protected</span><p>זה העוגן של החלק הדרומי. כל המעברים לפניו צריכים להגן על התאריך 21.11 ולא להשאיר הימור מיותר.</p><a href="#places-guide">פתחי מדריך יעד ↗</a></div>
+<div class="route-card" id="stop-9"><b>09 · Ushuaia</b><span>26–30 Nov · 4 nights</span><p>Tierra del Fuego, Laguna Esmeralda, Beagle Channel ויום התאוששות אחרי Torres.</p><a href="#places-guide">פתחי מדריך יעד ↗</a></div>
+<div class="route-card" id="stop-10"><b>10 · Buenos Aires · Final</b><span>1–4 Dec · 3 nights</span><p>סיום בלי לחץ: אוכל, קניות, כביסה, מנוחה ו־buffer גדול לטיסה הבינלאומית ב־4.12.</p><a href="#places-guide">פתחי מדריך יעד ↗</a></div>
+</div>
+<div class="live-map-card" style="margin-top:1.25rem"><div class="live-map-head"><div><span class="eyebrow">V7.8 · Local + Learn</span><h3>🗺️ המפה האינטראקטיבית</h3><p>מפה מקומית — עובדת גם בלי אינטרנט. לחצי על יעד כדי לראות תאריכים וקישור חיצוני ל־Google Maps.</p></div><button id="fit-map" type="button">התאימי למסלול</button></div><div id="travel-map" aria-label="Interactive South America itinerary map"></div></div>
+<h2 class="section-title" id="bookings">📋 Booking Checklist · V7.8</h2>
+<div class="canonical-route-note"><strong>סדר עדיפויות:</strong> קודם דברים עם תאריך קשיח/קיבולת מוגבלת, אחר כך רכב ומקומות לינה. כל סימון נשמר מקומית בדפדפן.</div>
+<div class="booking-tools"><div class="booking-list-v77">
+<label class="check-item urgent"><input class="check-toggle" data-booking-id="ba-iguazu" type="checkbox"><span class="check-name">Iguazú — לינה + פארקים<small>18–21 Oct · לבדוק כרטיסים/שעות פתיחה ויום ברזיל</small></span></label>
+<label class="check-item urgent"><input class="check-toggle" data-booking-id="salta-transport" type="checkbox"><span class="check-name">Salta &amp; Jujuy — רכב/סיורים<small>21–27 Oct · לבחור מראש אם נוהגים או מצטרפים לטיולים</small></span></label>
+<label class="check-item urgent"><input class="check-toggle" data-booking-id="bariloche-car" type="checkbox"><span class="check-name">Bariloche — רכב וטיולי הרים<small>27 Oct–2 Nov · רכב שימושי במיוחד לימים מחוץ לעיר</small></span></label>
+<label class="check-item urgent"><input class="check-toggle" data-booking-id="carretera-car" type="checkbox"><span class="check-name">Carretera Austral — רכב + אישור חציית גבול<small>2–8 Nov · לוודא בכתב שהרכב מורשה Chile → Argentina אם נדרש</small></span></label>
+<label class="check-item urgent"><input class="check-toggle" data-booking-id="chalten-lodging" type="checkbox"><span class="check-name">El Chaltén — לינה<small>8–14 Nov · 6 לילות נותנים buffer למזג האוויר</small></span></label>
+<label class="check-item urgent"><input class="check-toggle" data-booking-id="calafate-ice" type="checkbox"><span class="check-name">El Calafate — פעילות קרח/Perito Moreno<small>14–20 Nov · להזמין מראש אם רוצים Big Ice / שייט</small></span></label>
+<label class="check-item urgent"><input class="check-toggle" data-booking-id="puerto-natales-lodging" type="checkbox" checked><span class="check-name">Puerto Natales — לינה ✓<small>Pre-Torres base · סגרת לינה מראש</small></span></label>
+<label class="check-item urgent"><input class="check-toggle" data-booking-id="torres-fixed" type="checkbox"><span class="check-name">Torres del Paine — W Trek<small>21–25 Nov · התאריך הקובע של המסלול</small></span></label>
+<label class="check-item"><input class="check-toggle" data-booking-id="ushuaia-stay" type="checkbox"><span class="check-name">Ushuaia — לינה + Beagle Channel<small>26–30 Nov · להשאיר פעילות אחת גמישה לרוח</small></span></label>
+<label class="check-item urgent"><input class="check-toggle" data-booking-id="ba-final" type="checkbox"><span class="check-name">Buenos Aires final — לינה<small>1–4 Dec · לא לתכנן פעילות רחוקה ביום הטיסה</small></span></label>
+<label class="check-item urgent"><input class="check-toggle" data-booking-id="return-flight" type="checkbox"><span class="check-name">טיסת חזרה EZE → TLV<small>4 Dec · לשמור buffer גדול לשדה</small></span></label>
+</div></div>
+<h2 class="section-title" id="coordinates">📍 Route Coordinates · V7.8</h2>
+<div class="table-wrap"><table><thead><tr><th>#</th><th>יעד</th><th>תאריכים</th><th>Lat</th><th>Lon</th><th>הערה</th></tr></thead><tbody>
+<tr><td>1</td><td>Buenos Aires 🇦🇷</td><td>16–18 Oct</td><td>-34.6037</td><td>-58.3816</td><td>פתיחה</td></tr>
+<tr><td>2</td><td>Iguazú 🇦🇷</td><td>18–21 Oct</td><td>-25.6953</td><td>-54.4367</td><td>מפלים</td></tr>
+<tr><td>3</td><td>Salta &amp; Jujuy 🇦🇷</td><td>21–27 Oct</td><td>-24.7821</td><td>-65.4232</td><td>צפון־מערב</td></tr>
+<tr><td>4</td><td>Bariloche 🇦🇷</td><td>27 Oct–2 Nov</td><td>-41.1335</td><td>-71.3103</td><td>Lake District</td></tr>
+<tr><td>5</td><td>Carretera Austral 🇨🇱</td><td>2–8 Nov</td><td>-45.5712</td><td>-72.0685</td><td>נהיגה והרפתקה</td></tr>
+<tr><td>6</td><td>El Chaltén 🇦🇷</td><td>8–14 Nov</td><td>-49.3315</td><td>-72.8863</td><td>Fitz Roy</td></tr>
+<tr><td>7</td><td>El Calafate 🇦🇷</td><td>14–20 Nov</td><td>-50.3370</td><td>-72.2648</td><td>Perito Moreno</td></tr>
+<tr><td>8</td><td>Torres del Paine 🇨🇱</td><td>21–25 Nov</td><td>-50.9423</td><td>-73.4068</td><td>W Trek</td></tr>
+<tr><td>9</td><td>Ushuaia 🇦🇷</td><td>26–30 Nov</td><td>-54.8019</td><td>-68.3030</td><td>Beagle / Tierra del Fuego</td></tr>
+<tr><td>10</td><td>Buenos Aires 🇦🇷</td><td>1–4 Dec</td><td>-34.6037</td><td>-58.3816</td><td>סיום + טיסה</td></tr>
+</tbody></table></div>
+<div class="canonical-route-note"><strong>Puerto Natales:</strong> בסיס אמיתי לפני Torres, עם לינה שכבר הוזמנה. היא מוצגת בנפרד מה־10 stops כי אין לנו עדיין תאריכי לינה מדויקים ב־trip.json — לא הומצאו תאריכים.</div>
+<footer class="site-footer">
 <div>
 <strong>South America · 2026</strong>
 <span>Built for Maayan’s adventure through Argentina and Chile.</span>
 </div>
 <a href="#top" id="footer-top">Back to top ↑</a>
-</footer><script defer src="places-guide.js"></script><script defer src="my-guide.js"></script>
+</footer><script src="my-map.js"></script><script defer src="script.js"></script><script defer src="places-guide.js"></script><script defer src="my-guide.js"></script>
 </body>
 </html>
