@@ -384,3 +384,113 @@ document.addEventListener('DOMContentLoaded', () => {
   }, {rootMargin:'-25% 0px -65% 0px', threshold:[0,.1,.4]});
   targets.forEach(target => observer.observe(target));
 });
+
+
+/* V8.4 — local booking + flight import center */
+document.addEventListener('DOMContentLoaded', () => {
+  const KEY='travelos-imported-reservations-v1';
+  let state={bookings:[],flights:[]};
+  try{state=JSON.parse(localStorage.getItem(KEY)||'{"bookings":[],"flights":[]}')}catch(e){}
+  state.bookings=Array.isArray(state.bookings)?state.bookings:[];
+  state.flights=Array.isArray(state.flights)?state.flights:[];
+
+  const panel=document.getElementById('import-panel');
+  const title=document.getElementById('import-panel-title');
+  const text=document.getElementById('import-text');
+  const msg=document.getElementById('import-message');
+  const file=document.getElementById('import-file');
+  let importType='booking';
+
+  const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){};render();};
+
+  const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const iso=(s)=>{
+    if(!s)return '';
+    const m=String(s).match(/(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})|(\d{1,2})[-/.](\d{1,2})[-/.](20\d{2})/);
+    if(!m)return '';
+    const y=m[1]||m[6], mo=m[2]||m[5], d=m[3]||m[4];
+    return `${y}-${String(mo).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+  };
+  const parseDatePair=(raw)=>{
+    const a=[...String(raw||'').matchAll(/(?:check[- ]?in|arrival|כניסה|הגעה)[^\d]{0,30}(\d{1,2}[\/.-]\d{1,2}[\/.-]20\d{2}|20\d{2}[\/.-]\d{1,2}[\/.-]\d{1,2})/ig)][0];
+    const b=[...String(raw||'').matchAll(/(?:check[- ]?out|departure|יציאה|עזיבה)[^\d]{0,30}(\d{1,2}[\/.-]\d{1,2}[\/.-]20\d{2}|20\d{2}[\/.-]\d{1,2}[\/.-]\d{1,2})/ig)][0];
+    return {start:iso(a?.[1]),end:iso(b?.[1])};
+  };
+  const parseBooking=(raw)=>{
+    const dates=parseDatePair(raw);
+    const hotel=(raw.match(/(?:hotel|property|accommodation|מלון|נכס)\s*[:\-]\s*(.+)/i)||[])[1] ||
+      (raw.match(/(?:booking\.com|reservation)\s*[:\-]\s*(.+)/i)||[])[1] || 'לינה שיובאה';
+    const conf=(raw.match(/(?:confirmation|reservation)\s*(?:number|no\.?|#)?\s*[:\-]?\s*([A-Z0-9\-]{5,})/i)||[])[1] || '';
+    const city=(raw.match(/(?:city|עיר)\s*[:\-]\s*([^\n,]+)/i)||[])[1] || '';
+    return {id:'b-'+Date.now(),hotel:hotel.trim().slice(0,120),city:city.trim(),start:dates.start,end:dates.end,confirmation:conf,source:'import'};
+  };
+  const parseFlight=(raw)=>{
+    const dates=iso((raw.match(/(?:date|flight date|תאריך)\s*[:\-]\s*([0-9./-]+)/i)||[])[1]) ||
+      iso((raw.match(/(20\d{2}[-/.]\d{1,2}[-/.]\d{1,2})/)||[])[1]);
+    const route=(raw.match(/(?:route|מסלול)\s*[:\-]\s*([A-Z]{3}\s*(?:→|->|-)\s*[A-Z]{3})/i)||[])[1] || 
+      ((raw.match(/\b([A-Z]{3})\b\s*(?:→|->|-)\s*\b([A-Z]{3})\b/)||[]).slice(1,3).join(' → '));
+    const flightNo=(raw.match(/(?:flight|טיסה)\s*(?:number|no\.?|#)?\s*[:\-]?\s*([A-Z]{1,3}\s?\d{1,5})/i)||[])[1] || '';
+    const airline=(raw.match(/(?:airline|חברת תעופה)\s*[:\-]\s*(.+)/i)||[])[1] || '';
+    const time=(raw.match(/\b([01]?\d|2[0-3]):[0-5]\d\b/)||[])[0] || '';
+    return {id:'f-'+Date.now(),date:dates,route:route||'טיסה ללא מסלול',flightNo,airline:airline.trim(),time,source:'import'};
+  };
+  const parseContent=(raw,type)=>{
+    const s=String(raw||'').trim();
+    if(!s)return null;
+    try{
+      const j=JSON.parse(s);
+      if(j.type==='booking'||type==='booking'&&j.hotel){return {...j,id:j.id||'b-'+Date.now()};}
+      if(j.type==='flight'||type==='flight'&&j.route){return {...j,id:j.id||'f-'+Date.now()};}
+      if(Array.isArray(j.bookings)||Array.isArray(j.flights)) return j;
+    }catch(e){}
+    return type==='booking'?parseBooking(s):parseFlight(s);
+  };
+
+  const render=()=>{
+    const bc=document.getElementById('imported-bookings-count'),fc=document.getElementById('imported-flights-count'),list=document.getElementById('imported-list');
+    if(bc)bc.textContent=state.bookings.length;
+    if(fc)fc.textContent=state.flights.length;
+    if(!list)return;
+    const b=state.bookings.map(x=>`<div class="imported-item"><span class="type">🏨</span><div><strong>${esc(x.hotel||'לינה')}</strong><small>${esc(x.city||'')} ${esc(x.start||'')} → ${esc(x.end||'')} ${x.confirmation?'· אישור '+esc(x.confirmation):''}</small></div><button data-remove="b" data-id="${esc(x.id)}">הסרה</button></div>`).join('');
+    const f=state.flights.map(x=>`<div class="imported-item"><span class="type">✈️</span><div><strong>${esc(x.route||'טיסה')} ${x.flightNo?'· '+esc(x.flightNo):''}</strong><small>${esc(x.date||'')} ${esc(x.time||'')} ${esc(x.airline||'')}</small></div><button data-remove="f" data-id="${esc(x.id)}">הסרה</button></div>`).join('');
+    list.innerHTML=(b+f)||'<div class="sync-note">עדיין לא יובאו הזמנות או טיסות. הוסיפי אישור כדי שהן יופיעו כאן.</div>';
+    list.querySelectorAll('button[data-remove]').forEach(btn=>btn.addEventListener('click',()=>{const k=btn.dataset.remove==='b'?'bookings':'flights';state[k]=state[k].filter(x=>x.id!==btn.dataset.id);save();}));
+  };
+  const open=(type)=>{
+    importType=type;
+    if(title)title.textContent=type==='booking'?'ייבוא הזמנת Booking.com':'ייבוא אישור טיסה';
+    if(text)text.value='';
+    if(msg)msg.textContent='אפשר להדביק טקסט מהאימייל או לייבא JSON/CSV/ICS.';
+    if(panel)panel.hidden=false;
+    panel?.scrollIntoView({behavior:'smooth',block:'nearest'});
+  };
+  document.querySelectorAll('[data-import-type]').forEach(b=>b.addEventListener('click',()=>open(b.dataset.importType)));
+  document.getElementById('import-close')?.addEventListener('click',()=>{if(panel)panel.hidden=true;});
+  document.getElementById('import-template')?.addEventListener('click',()=>{
+    const sample=importType==='booking'
+      ? 'Hotel: Example Hotel\\nCity: Bariloche\\nCheck-in: 01/11/2026\\nCheck-out: 04/11/2026\\nConfirmation number: ABC12345'
+      : 'Airline: Example Air\\nRoute: AEP → USH\\nDate: 21/10/2026\\nFlight: XX123\\nTime: 18:30';
+    if(text)text.value=sample;
+    if(msg)msg.textContent='אפשר להחליף את הדוגמה בפרטי האישור שלך וללחוץ "ייבוא ועדכון".';
+  });
+  file?.addEventListener('change',async()=>{
+    const f=file.files?.[0]; if(!f)return;
+    const raw=await f.text();
+    if(text)text.value=raw;
+    if(msg)msg.textContent=`נטען: ${f.name}`;
+  });
+  document.getElementById('import-save')?.addEventListener('click',()=>{
+    const raw=text?.value||'';
+    const parsed=parseContent(raw,importType);
+    if(!parsed){if(msg)msg.textContent='לא הצלחתי לזהות פרטים. נסי להדביק את טקסט האישור המלא.';return;}
+    if(parsed.bookings||parsed.flights){
+      if(Array.isArray(parsed.bookings))state.bookings.push(...parsed.bookings.map(x=>({...x,id:x.id||'b-'+Date.now()+Math.random()})));
+      if(Array.isArray(parsed.flights))state.flights.push(...parsed.flights.map(x=>({...x,id:x.id||'f-'+Date.now()+Math.random()})));
+    }else if(importType==='booking') state.bookings.push(parsed);
+    else state.flights.push(parsed);
+    save();
+    if(msg)msg.textContent='הייבוא הצליח ✓ הנתונים נשמרו מקומית.';
+    if(text)text.value='';
+  });
+  render();
+});

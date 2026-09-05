@@ -24,3 +24,10 @@
 - Added clickable booking dates; each date opens the exact remaining booking/checklist items.
 - Booking status remains persistent in localStorage.
 - Added a dedicated 1 November Bariloche date card as requested.
+
+
+## V8.4
+- מרכז הזמנות וטיסות עם ייבוא אישורים.
+- אפשרות לייבא JSON / CSV / ICS או להדביק טקסט של אישור.
+- הזמנות וטיסות נשמרות מקומית בדפדפן ומוצמדות לתאריכים.
+- סטטוס ברור: הוזמן / חסר / פרטים חסרים.
