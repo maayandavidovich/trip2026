@@ -1,3 +1,8 @@
+## V9.1
+- Unified the visual language across the entire app around the Patagonia reference: airy blue/teal/white surfaces, soft shadows, consistent rounded cards and a photo-led hero.
+- Restyled itinerary, destination guide, learning, bookings, map, sync/import and footer sections.
+- Added CSS/JS cache-busting and bumped the service-worker cache to V9.1.
+
 # V8.8 — Booking history correction
 
 - Restored/confirmed from project history: The Host Puerto Iguazú, 20–22/10/2026.
