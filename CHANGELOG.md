@@ -13,3 +13,8 @@
 - תמונות נטענות מיד.
 - Puerto Natales נשארת בסיס אמיתי לפני Torres עם לינה מוזמנת.
 - שיפור המפה, הכרטיסים והטפסים.
+
+## V8.2
+- Added clickable booking dates; each date opens the exact remaining booking/checklist items.
+- Booking status remains persistent in localStorage.
+- Added a dedicated 1 November Bariloche date card as requested.

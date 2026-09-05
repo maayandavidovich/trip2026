@@ -280,6 +280,54 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Booking calendar: click a date to see exactly what is still missing for that date.
+  const bookingDates = [...document.querySelectorAll('.booking-date-card')];
+  const bookingDetail = document.getElementById('booking-detail');
+  const bookingDetailTitle = document.getElementById('booking-detail-title');
+  const bookingDetailSummary = document.getElementById('booking-detail-summary');
+  const bookingDetailList = document.getElementById('booking-detail-list');
+  const bookingDetailClose = document.getElementById('booking-detail-close');
+  const bookingSourceItems = [...document.querySelectorAll('#booking-all-items .check-item')];
+  const dateNames = Object.fromEntries(bookingDates.map(b => [b.dataset.date, b.querySelector('strong')?.textContent.trim() || '']));
+  const formatBookingDate = value => { const [y,m,d]=value.split('-'); return `${Number(d)}.${Number(m)}`; };
+  const refreshBookingCalendar = () => {
+    bookingDates.forEach(card => {
+      const date=card.dataset.date;
+      const relevant=bookingSourceItems.filter(item => (item.dataset.dates||'').split(',').includes(date));
+      const open=relevant.filter(item => !item.querySelector('input')?.checked).length;
+      const count=card.querySelector(`[data-count-for="${date}"]`);
+      if(count) count.textContent = open ? `${open} חסר${open===1?'':'ים'}` : '✓ הכל מסודר';
+      card.classList.toggle('has-open', open>0);
+      card.classList.toggle('all-done', open===0 && relevant.length>0);
+    });
+  };
+  const openBookingDate = date => {
+    const relevant=bookingSourceItems.filter(item => (item.dataset.dates||'').split(',').includes(date));
+    bookingDates.forEach(c => c.classList.toggle('selected', c.dataset.date===date));
+    if(bookingDetailTitle) bookingDetailTitle.textContent = `${formatBookingDate(date)} · ${dateNames[date] || ''}`;
+    const open=relevant.filter(item => !item.querySelector('input')?.checked);
+    if(bookingDetailSummary) bookingDetailSummary.innerHTML = open.length
+      ? `<strong>${open.length} ${open.length===1?'דבר עדיין חסר':'דברים עדיין חסרים'}</strong> לתאריך הזה.`
+      : '<strong>הכול מסודר ✓</strong> אין כרגע משימות פתוחות לתאריך הזה.';
+    if(bookingDetailList) bookingDetailList.innerHTML = relevant.length ? relevant.map(item => {
+      const box=item.querySelector('input');
+      const name=item.querySelector('.check-name')?.cloneNode(true);
+      if(name){ const small=name.querySelector('small'); if(small) small.remove(); }
+      const title=(name?.textContent||'').trim();
+      const detail=item.querySelector('small')?.textContent.trim()||'';
+      return `<label class="booking-detail-item ${box?.checked?'done':''}"><input class="check-toggle" data-booking-id="${box?.dataset.bookingId||''}" type="checkbox" ${box?.checked?'checked':''}><span><strong>${title}</strong><small>${detail}</small></span><b>${box?.checked?'✓':'חסר'}</b></label>`;
+    }).join('') : '<div class="booking-empty">אין משימות מוגדרות לתאריך הזה.</div>';
+    if(bookingDetail){ bookingDetail.hidden=false; bookingDetail.scrollIntoView({behavior:'smooth',block:'nearest'}); }
+    bookingDetailList?.querySelectorAll('input.check-toggle').forEach(copy => copy.addEventListener('change', () => {
+      const original=bookingSourceItems.find(item => item.dataset.bookingId===copy.dataset.bookingId)?.querySelector('input');
+      if(original){ original.checked=copy.checked; original.dispatchEvent(new Event('change',{bubbles:true})); }
+      openBookingDate(date); refreshBookingCalendar();
+    }));
+  };
+  bookingDates.forEach(card => card.addEventListener('click', () => openBookingDate(card.dataset.date)));
+  bookingDetailClose?.addEventListener('click', () => { if(bookingDetail) bookingDetail.hidden=true; bookingDates.forEach(c=>c.classList.remove('selected')); });
+  refreshBookingCalendar();
+
   // Booking filters.
   const bookingItems = [...document.querySelectorAll('.booking-item')];
   const filterCount = document.getElementById('filter-count');

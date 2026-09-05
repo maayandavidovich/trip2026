@@ -11,3 +11,7 @@
 - אין תלות בתמונות מהאינטרנט.
 
 פתחי `index.html` או פרסמי את התיקייה ב-GitHub Pages.
+
+
+### V8.2
+Clickable booking calendar by date. Select a date (for example 1.11) to see exactly what is still missing.
