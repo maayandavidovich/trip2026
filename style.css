@@ -1093,3 +1093,37 @@ body{min-height:100vh}
   .booking-date-card strong{font-size:17px!important}
   .version-strip{font-size:12px}
 }
+
+/* V8.6 readability polish */
+body{font-size:17px!important}
+p,li{font-size:16px}
+.dashboard-panel h2{font-size:2.15rem!important}
+.next-action-title{font-size:24px!important;font-weight:850!important}
+.next-action-note{font-size:16px!important}
+.action-card strong{font-size:22px!important}
+.action-card p{font-size:16px!important}
+.booking-date-card span{font-size:27px!important}
+.booking-date-card strong{font-size:19px!important}
+.booking-date-card em{font-size:15px!important}
+.section-title{font-size:2.15rem!important}
+.version-strip{font-size:14px!important;background:#e5efe7!important;color:#174f46!important;border:1px solid #b9cfbf!important}
+@media(max-width:700px){
+  body{font-size:16px!important}
+  p,li{font-size:15px}
+  .dashboard-panel h2{font-size:1.85rem!important}
+}
+
+/* V8.7 booking clarity */
+.status-badge{display:inline-block;margin-right:7px;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:850;vertical-align:middle}
+.status-badge.booked{background:#e4efe6;color:#23614f;border:1px solid #bdd3c2}
+.status-badge.open{background:#f8e5df;color:#9b4f43;border:1px solid #e8b8ad}
+.confirmed-panel{background:var(--paper);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:22px;margin:18px 0}
+.confirmed-head h3{font-size:1.8rem;color:var(--forest);margin:4px 0 5px}
+.confirmed-head p{font-size:15px;color:var(--muted);margin:0 0 15px}
+.confirmed-flight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.confirmed-flight-grid>div{background:#f1f5f0;border:1px solid #d6e0d6;border-radius:15px;padding:14px}
+.confirmed-flight-grid b{display:block;color:var(--coral);font-size:14px}
+.confirmed-flight-grid strong{display:block;color:var(--forest);font-size:16px;margin:4px 0}
+.confirmed-flight-grid span{display:block;color:var(--muted);font-size:13px}
+@media(max-width:800px){.confirmed-flight-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.confirmed-flight-grid{grid-template-columns:1fr}.status-badge{font-size:11px}}

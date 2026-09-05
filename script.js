@@ -175,6 +175,15 @@
     window.scrollTo({top: 0, behavior: 'smooth'});
   });
 
+  // V8.6: calculate countdown to the actual international departure from TLV on 15.10.2026.
+  const departureTarget = new Date('2026-10-15T00:00:00+03:00');
+  const daysNode = document.getElementById('days-to-go');
+  if (daysNode) {
+    const diff = departureTarget.getTime() - Date.now();
+    const days = Math.max(0, Math.ceil(diff / 86400000));
+    daysNode.textContent = String(days);
+  }
+
   // Keep the countdown accurate when the page stays open overnight.
   const nowMs = Date.now();
   const nextMidnight = new Date();
